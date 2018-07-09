@@ -6,9 +6,22 @@
     <description>Recent content in Home on PinkertonCS</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
+    <lastBuildDate>Thu, 05 Jul 2018 13:52:46 -0400</lastBuildDate>
     
 	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Pinkerton CTE Summer Coding Camp</title>
+      <link>/camp/</link>
+      <pubDate>Thu, 05 Jul 2018 13:52:46 -0400</pubDate>
+      
+      <guid>/camp/</guid>
+      <description>Coding &amp;amp; Computer Science with the RaspberryPi This four day camp will introduce you to the exciting, challenging, and fun field of coding using the amazing $35 dollar RaspberryPi computer.
+We will learn about:
+ The RaspberryPi device Visual programming with Scratch Python Programming creating music with code Minecraft programming with Python Programming simple circuits using Scratch and Python  Itinerary  Monday
+ Getting Started with the RaspberryPi Getting Started with Scratch Beginner Scratch Intermediate Scratch Advanced Scratch Gravity Simulator Guess the Flag Chatbot  Tuesday</description>
+    </item>
     
     <item>
       <title>Capstone</title>
