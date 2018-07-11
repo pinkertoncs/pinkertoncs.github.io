@@ -83,26 +83,26 @@ to the ball itself, so <strong>this.x</strong> becomes <strong>ball.x</strong> w
 <li>Since we want this to be OO, we put as much of the ball&rsquo;s functionality into the ball
 object as we can.</li>
 </ul>
-<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#fff;font-weight:bold">var</span> ball={
-    initialize:<span style="color:#fff;font-weight:bold">function</span>(x,y,r){
-        <span style="color:#fff;font-weight:bold">this</span>.x=x; <span style="color:#fff;font-weight:bold">this</span>.y=y
-        <span style="color:#fff;font-weight:bold">this</span>.r=r
-        <span style="color:#fff;font-weight:bold">this</span>.vx=<span style="color:#ff0;font-weight:bold">1</span>; <span style="color:#fff;font-weight:bold">this</span>.vy=<span style="color:#ff0;font-weight:bold">1</span>
+<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#a2f;font-weight:bold">var</span> ball<span style="color:#666">=</span>{
+    initialize<span style="color:#666">:</span><span style="color:#a2f;font-weight:bold">function</span>(x,y,r){
+        <span style="color:#a2f;font-weight:bold">this</span>.x<span style="color:#666">=</span>x; <span style="color:#a2f;font-weight:bold">this</span>.y<span style="color:#666">=</span>y
+        <span style="color:#a2f;font-weight:bold">this</span>.r<span style="color:#666">=</span>r
+        <span style="color:#a2f;font-weight:bold">this</span>.vx<span style="color:#666">=</span><span style="color:#666">1</span>; <span style="color:#a2f;font-weight:bold">this</span>.vy<span style="color:#666">=</span><span style="color:#666">1</span>
     },
-    update:<span style="color:#fff;font-weight:bold">function</span>(){
-        <span style="color:#fff;font-weight:bold">this</span>.x += <span style="color:#fff;font-weight:bold">this</span>.vx
-        <span style="color:#fff;font-weight:bold">this</span>.y += <span style="color:#fff;font-weight:bold">this</span>.vy
+    update<span style="color:#666">:</span><span style="color:#a2f;font-weight:bold">function</span>(){
+        <span style="color:#a2f;font-weight:bold">this</span>.x <span style="color:#666">+=</span> <span style="color:#a2f;font-weight:bold">this</span>.vx
+        <span style="color:#a2f;font-weight:bold">this</span>.y <span style="color:#666">+=</span> <span style="color:#a2f;font-weight:bold">this</span>.vy
     },
-    draw:<span style="color:#fff;font-weight:bold">function</span>(ctx){
+    draw<span style="color:#666">:</span><span style="color:#a2f;font-weight:bold">function</span>(ctx){
         ctx.beginPath()
-        ctx.arc(<span style="color:#fff;font-weight:bold">this</span>.x,<span style="color:#fff;font-weight:bold">this</span>.y,<span style="color:#fff;font-weight:bold">this</span>.r,<span style="color:#ff0;font-weight:bold">0</span>,<span style="color:#ff0;font-weight:bold">2</span>*<span style="color:#fff;font-weight:bold">Math</span>.PI);
+        ctx.arc(<span style="color:#a2f;font-weight:bold">this</span>.x,<span style="color:#a2f;font-weight:bold">this</span>.y,<span style="color:#a2f;font-weight:bold">this</span>.r,<span style="color:#666">0</span>,<span style="color:#666">2</span><span style="color:#666">*</span><span style="color:#a2f">Math</span>.PI);
         ctx.stroke();
         ctx.fill()
     }
 }
 
-<span style="color:#007f7f">// initialize
-</span><span style="color:#007f7f"></span>ball.initialize( x, y r )
+<span style="color:#080;font-style:italic">// initialize
+</span><span style="color:#080;font-style:italic"></span>ball.initialize( x, y r )
 </code></pre></div>
 <h2 id="prototypes">Prototypes</h2>
 
@@ -114,28 +114,28 @@ object as we can.</li>
 </ul></li>
 <li>When you use constructors, you must construct new objects using the new keyword.</li>
 </ul>
-<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#fff;font-weight:bold">var</span> Ball = <span style="color:#fff;font-weight:bold">function</span>(x, y, r){
-    <span style="color:#fff;font-weight:bold">this</span>.r=r
-    <span style="color:#fff;font-weight:bold">this</span>.x=x; <span style="color:#fff;font-weight:bold">this</span>.y=y
-    <span style="color:#fff;font-weight:bold">this</span>.vx=<span style="color:#ff0;font-weight:bold">1</span>; <span style="color:#fff;font-weight:bold">this</span>.vy=<span style="color:#ff0;font-weight:bold">1</span>
+<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#a2f;font-weight:bold">var</span> Ball <span style="color:#666">=</span> <span style="color:#a2f;font-weight:bold">function</span>(x, y, r){
+    <span style="color:#a2f;font-weight:bold">this</span>.r<span style="color:#666">=</span>r
+    <span style="color:#a2f;font-weight:bold">this</span>.x<span style="color:#666">=</span>x; <span style="color:#a2f;font-weight:bold">this</span>.y<span style="color:#666">=</span>y
+    <span style="color:#a2f;font-weight:bold">this</span>.vx<span style="color:#666">=</span><span style="color:#666">1</span>; <span style="color:#a2f;font-weight:bold">this</span>.vy<span style="color:#666">=</span><span style="color:#666">1</span>
 
-    <span style="color:#fff;font-weight:bold">this</span>.update=<span style="color:#fff;font-weight:bold">function</span>(){
-        <span style="color:#fff;font-weight:bold">this</span>.x += <span style="color:#fff;font-weight:bold">this</span>.vx
-        <span style="color:#fff;font-weight:bold">this</span>.y += <span style="color:#fff;font-weight:bold">this</span>.vy
+    <span style="color:#a2f;font-weight:bold">this</span>.update<span style="color:#666">=</span><span style="color:#a2f;font-weight:bold">function</span>(){
+        <span style="color:#a2f;font-weight:bold">this</span>.x <span style="color:#666">+=</span> <span style="color:#a2f;font-weight:bold">this</span>.vx
+        <span style="color:#a2f;font-weight:bold">this</span>.y <span style="color:#666">+=</span> <span style="color:#a2f;font-weight:bold">this</span>.vy
     }
 
-    <span style="color:#fff;font-weight:bold">this</span>.draw = <span style="color:#fff;font-weight:bold">function</span>(ctx){
-        <span style="color:#007f7f">// draw game ball in given context at pos (x,y)
-</span><span style="color:#007f7f"></span>        ctx.beginPath()
-        ctx.arc(<span style="color:#fff;font-weight:bold">this</span>.x,<span style="color:#fff;font-weight:bold">this</span>.y,<span style="color:#fff;font-weight:bold">this</span>.r,<span style="color:#ff0;font-weight:bold">0</span>,<span style="color:#ff0;font-weight:bold">2</span>*<span style="color:#fff;font-weight:bold">Math</span>.PI);
+    <span style="color:#a2f;font-weight:bold">this</span>.draw <span style="color:#666">=</span> <span style="color:#a2f;font-weight:bold">function</span>(ctx){
+        <span style="color:#080;font-style:italic">// draw game ball in given context at pos (x,y)
+</span><span style="color:#080;font-style:italic"></span>        ctx.beginPath()
+        ctx.arc(<span style="color:#a2f;font-weight:bold">this</span>.x,<span style="color:#a2f;font-weight:bold">this</span>.y,<span style="color:#a2f;font-weight:bold">this</span>.r,<span style="color:#666">0</span>,<span style="color:#666">2</span><span style="color:#666">*</span><span style="color:#a2f">Math</span>.PI);
         ctx.stroke();
         ctx.fill()
     }
 }
 
-<span style="color:#007f7f">// create new Ball objects
-</span><span style="color:#007f7f"></span><span style="color:#fff;font-weight:bold">var</span> ball1 = <span style="color:#fff;font-weight:bold">new</span> Ball(x1, y1, r1)
-<span style="color:#fff;font-weight:bold">var</span> ball2 = <span style="color:#fff;font-weight:bold">new</span> Ball(x2, y2, r2)
+<span style="color:#080;font-style:italic">// create new Ball objects
+</span><span style="color:#080;font-style:italic"></span><span style="color:#a2f;font-weight:bold">var</span> ball1 <span style="color:#666">=</span> <span style="color:#a2f;font-weight:bold">new</span> Ball(x1, y1, r1)
+<span style="color:#a2f;font-weight:bold">var</span> ball2 <span style="color:#666">=</span> <span style="color:#a2f;font-weight:bold">new</span> Ball(x2, y2, r2)
 </code></pre></div>
 <h3 id="prototype-property">Prototype Property</h3>
 

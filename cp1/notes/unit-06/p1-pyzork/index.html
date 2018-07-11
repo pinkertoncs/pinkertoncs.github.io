@@ -95,26 +95,26 @@
 </ul>
 
 <h4 id="room-class"><strong>Room class</strong></h4>
-<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#fff;font-weight:bold">if</span> __name__==<span style="color:#0ff;font-weight:bold">&#39;__main__&#39;</span>:
+<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#a2f;font-weight:bold">if</span> __name__<span style="color:#666">==</span><span style="color:#b44">&#39;__main__&#39;</span>:
 
-    <span style="color:#fff;font-weight:bold">print</span>( <span style="color:#0ff;font-weight:bold">&#39;# ROOM UNIT TESTS&#39;</span> )
+    <span style="color:#a2f;font-weight:bold">print</span>( <span style="color:#b44">&#39;# ROOM UNIT TESTS&#39;</span> )
 
-    <span style="color:#0ff;font-weight:bold">&#39;&#39;&#39;
-</span><span style="color:#0ff;font-weight:bold">    -------------
-</span><span style="color:#0ff;font-weight:bold">    | Grand Hall |
-</span><span style="color:#0ff;font-weight:bold">    --------------
-</span><span style="color:#0ff;font-weight:bold">    | Foyer      |
-</span><span style="color:#0ff;font-weight:bold">    --------------
-</span><span style="color:#0ff;font-weight:bold">    &#39;&#39;&#39;</span>
+    <span style="color:#b44">&#39;&#39;&#39;
+</span><span style="color:#b44">    -------------
+</span><span style="color:#b44">    | Grand Hall |
+</span><span style="color:#b44">    --------------
+</span><span style="color:#b44">    | Foyer      |
+</span><span style="color:#b44">    --------------
+</span><span style="color:#b44">    &#39;&#39;&#39;</span>
 
-    <span style="color:#007f7f"># setup rooms</span>
-    rm1 = Room( <span style="color:#0ff;font-weight:bold">&#34;Foyer&#34;</span>, <span style="color:#0ff;font-weight:bold">&#34;a small entrance area&#34;</span> )
-    rm2 = Room( <span style="color:#0ff;font-weight:bold">&#34;Grand Hall&#34;</span>, <span style="color:#0ff;font-weight:bold">&#34;a grand old hall&#34;</span> )
-    rm1.connect_to( rm2, <span style="color:#0ff;font-weight:bold">&#39;N&#39;</span> )
+    <span style="color:#080;font-style:italic"># setup rooms</span>
+    rm1 <span style="color:#666">=</span> Room( <span style="color:#b44">&#34;Foyer&#34;</span>, <span style="color:#b44">&#34;a small entrance area&#34;</span> )
+    rm2 <span style="color:#666">=</span> Room( <span style="color:#b44">&#34;Grand Hall&#34;</span>, <span style="color:#b44">&#34;a grand old hall&#34;</span> )
+    rm1<span style="color:#666">.</span>connect_to( rm2, <span style="color:#b44">&#39;N&#39;</span> )
 
-    <span style="color:#007f7f"># test doors</span>
-    <span style="color:#fff;font-weight:bold">print</span>( rm1.doors[<span style="color:#0ff;font-weight:bold">&#39;N&#39;</span>] )    <span style="color:#007f7f"># Grand Hall</span>
-    <span style="color:#fff;font-weight:bold">print</span>( rm2.doors[<span style="color:#0ff;font-weight:bold">&#39;S&#39;</span>] )    <span style="color:#007f7f"># Foyer</span></code></pre></div>
+    <span style="color:#080;font-style:italic"># test doors</span>
+    <span style="color:#a2f;font-weight:bold">print</span>( rm1<span style="color:#666">.</span>doors[<span style="color:#b44">&#39;N&#39;</span>] )    <span style="color:#080;font-style:italic"># Grand Hall</span>
+    <span style="color:#a2f;font-weight:bold">print</span>( rm2<span style="color:#666">.</span>doors[<span style="color:#b44">&#39;S&#39;</span>] )    <span style="color:#080;font-style:italic"># Foyer</span></code></pre></div>
 <h4 id="output">Output</h4>
 
 <pre><code># ROOM UNIT TESTS
@@ -132,21 +132,21 @@ Foyer
 </ul>
 
 <p><strong>Player class</strong></p>
-<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#fff;font-weight:bold">if</span> __name__==<span style="color:#0ff;font-weight:bold">&#39;__main__&#39;</span>:
+<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#a2f;font-weight:bold">if</span> __name__<span style="color:#666">==</span><span style="color:#b44">&#39;__main__&#39;</span>:
 
-    <span style="color:#fff;font-weight:bold">print</span>( <span style="color:#0ff;font-weight:bold">&#39;# PLAYER UNIT TESTS&#39;</span> )
+    <span style="color:#a2f;font-weight:bold">print</span>( <span style="color:#b44">&#39;# PLAYER UNIT TESTS&#39;</span> )
 
-    <span style="color:#007f7f"># setup rooms</span>
-    rm1 = room.Room( <span style="color:#0ff;font-weight:bold">&#34;Foyer&#34;</span>, <span style="color:#0ff;font-weight:bold">&#34;a small entrance area&#34;</span> )
-    rm2 = room.Room( <span style="color:#0ff;font-weight:bold">&#34;Grand Hall&#34;</span>, <span style="color:#0ff;font-weight:bold">&#34;a grand old hall&#34;</span> )
-    rm1.connect_to( rm2, <span style="color:#0ff;font-weight:bold">&#39;N&#39;</span> )
+    <span style="color:#080;font-style:italic"># setup rooms</span>
+    rm1 <span style="color:#666">=</span> room<span style="color:#666">.</span>Room( <span style="color:#b44">&#34;Foyer&#34;</span>, <span style="color:#b44">&#34;a small entrance area&#34;</span> )
+    rm2 <span style="color:#666">=</span> room<span style="color:#666">.</span>Room( <span style="color:#b44">&#34;Grand Hall&#34;</span>, <span style="color:#b44">&#34;a grand old hall&#34;</span> )
+    rm1<span style="color:#666">.</span>connect_to( rm2, <span style="color:#b44">&#39;N&#39;</span> )
 
-    <span style="color:#007f7f"># test Player functions</span>
-    p = Player()
-    p.goto( rm1 )
-    p.look()
-    p.go( <span style="color:#0ff;font-weight:bold">&#39;N&#39;</span> )
-    p.look()</code></pre></div>
+    <span style="color:#080;font-style:italic"># test Player functions</span>
+    p <span style="color:#666">=</span> Player()
+    p<span style="color:#666">.</span>goto( rm1 )
+    p<span style="color:#666">.</span>look()
+    p<span style="color:#666">.</span>go( <span style="color:#b44">&#39;N&#39;</span> )
+    p<span style="color:#666">.</span>look()</code></pre></div>
 <h4 id="output-1">Output</h4>
 
 <h4 id="player-unit-tests">Player Unit Tests</h4>
@@ -175,10 +175,10 @@ a grand old hall
 </ul>
 
 <p><strong>Game class</strong></p>
-<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#fff;font-weight:bold">if</span> __name__==<span style="color:#0ff;font-weight:bold">&#39;__main__&#39;</span>:
+<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#a2f;font-weight:bold">if</span> __name__<span style="color:#666">==</span><span style="color:#b44">&#39;__main__&#39;</span>:
 
-    g=Game()
-    g.start()</code></pre></div>
+    g<span style="color:#666">=</span>Game()
+    g<span style="color:#666">.</span>start()</code></pre></div>
 <h4 id="output-2">Output</h4>
 
 <pre><code>Welcome to PyZork!

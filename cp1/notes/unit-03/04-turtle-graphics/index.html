@@ -47,13 +47,13 @@
 <li>you can <strong>import</strong> modules to use in your code</li>
 </ul></li>
 </ul>
-<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#fff;font-weight:bold">import</span> random
+<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#a2f;font-weight:bold">import</span> <span style="color:#00f;font-weight:bold">random</span>
 
-<span style="color:#007f7f"># random float 0 &lt;= x &lt; 1</span>
-<span style="color:#fff;font-weight:bold">print</span>(random.random())
+<span style="color:#080;font-style:italic"># random float 0 &lt;= x &lt; 1</span>
+<span style="color:#a2f;font-weight:bold">print</span>(random<span style="color:#666">.</span>random())
 
-<span style="color:#007f7f"># random integer 0 &lt;= x &lt; 100</span>
-<span style="color:#fff;font-weight:bold">print</span>(random.randrange(<span style="color:#ff0;font-weight:bold">0</span>, <span style="color:#ff0;font-weight:bold">100</span>))</code></pre></div>
+<span style="color:#080;font-style:italic"># random integer 0 &lt;= x &lt; 100</span>
+<span style="color:#a2f;font-weight:bold">print</span>(random<span style="color:#666">.</span>randrange(<span style="color:#666">0</span>, <span style="color:#666">100</span>))</code></pre></div>
 <h1 id="turtle-graphics">Turtle Graphics</h1>
 
 <h2 id="references">References</h2>
@@ -84,25 +84,25 @@
 For example, you can use a turtle to draw!</li>
 </ul></li>
 </ul>
-<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#fff;font-weight:bold">import</span> turtle
+<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#a2f;font-weight:bold">import</span> <span style="color:#00f;font-weight:bold">turtle</span>
 
-<span style="color:#fff;font-weight:bold">def</span> do_turtle_stuff():
+<span style="color:#a2f;font-weight:bold">def</span> <span style="color:#00a000">do_turtle_stuff</span>():
 
-    <span style="color:#007f7f"># create turtles</span>
-    joe = turtle.Turtle()
-    moe = turtle.Turtle()
+    <span style="color:#080;font-style:italic"># create turtles</span>
+    joe <span style="color:#666">=</span> turtle<span style="color:#666">.</span>Turtle()
+    moe <span style="color:#666">=</span> turtle<span style="color:#666">.</span>Turtle()
 
-    <span style="color:#007f7f"># draw stuff!</span>
-    joe.forward(<span style="color:#ff0;font-weight:bold">100</span>)
+    <span style="color:#080;font-style:italic"># draw stuff!</span>
+    joe<span style="color:#666">.</span>forward(<span style="color:#666">100</span>)
 
 
-<span style="color:#fff;font-weight:bold">def</span> main():
-    <span style="color:#fff;font-weight:bold">try</span>:
-        <span style="color:#007f7f"># create a screen</span>
-        s = turtle.Screen()
+<span style="color:#a2f;font-weight:bold">def</span> <span style="color:#00a000">main</span>():
+    <span style="color:#a2f;font-weight:bold">try</span>:
+        <span style="color:#080;font-style:italic"># create a screen</span>
+        s <span style="color:#666">=</span> turtle<span style="color:#666">.</span>Screen()
         do_turtle_stuff()
-    <span style="color:#fff;font-weight:bold">finally</span>:
-        s.mainloop()
+    <span style="color:#a2f;font-weight:bold">finally</span>:
+        s<span style="color:#666">.</span>mainloop()
 
 
 main()</code></pre></div>
@@ -183,57 +183,57 @@ main()</code></pre></div>
 </ul></li>
 </ul></li>
 </ul>
-<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#fff;font-weight:bold">import</span> turtle
+<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#a2f;font-weight:bold">import</span> <span style="color:#00f;font-weight:bold">turtle</span>
 
-<span style="color:#fff;font-weight:bold">def</span> do_turtle_stuff():
+<span style="color:#a2f;font-weight:bold">def</span> <span style="color:#00a000">do_turtle_stuff</span>():
 
-    <span style="color:#007f7f"># create turtles</span>
-    joe = turtle.Turtle()
-    moe = turtle.Turtle()
+    <span style="color:#080;font-style:italic"># create turtles</span>
+    joe <span style="color:#666">=</span> turtle<span style="color:#666">.</span>Turtle()
+    moe <span style="color:#666">=</span> turtle<span style="color:#666">.</span>Turtle()
 
-    <span style="color:#007f7f"># set pen color</span>
-    joe.color(<span style="color:#0ff;font-weight:bold">&#39;blue&#39;</span>)
-    joe.width(<span style="color:#ff0;font-weight:bold">3</span>)
+    <span style="color:#080;font-style:italic"># set pen color</span>
+    joe<span style="color:#666">.</span>color(<span style="color:#b44">&#39;blue&#39;</span>)
+    joe<span style="color:#666">.</span>width(<span style="color:#666">3</span>)
 
-    <span style="color:#007f7f"># draw a nose</span>
-    joe.forward(<span style="color:#ff0;font-weight:bold">100</span>)
-    joe.left(<span style="color:#ff0;font-weight:bold">135</span>)
-    joe.forward(<span style="color:#ff0;font-weight:bold">100</span>)
-    joe.right(<span style="color:#ff0;font-weight:bold">45</span>)
+    <span style="color:#080;font-style:italic"># draw a nose</span>
+    joe<span style="color:#666">.</span>forward(<span style="color:#666">100</span>)
+    joe<span style="color:#666">.</span>left(<span style="color:#666">135</span>)
+    joe<span style="color:#666">.</span>forward(<span style="color:#666">100</span>)
+    joe<span style="color:#666">.</span>right(<span style="color:#666">45</span>)
 
-    <span style="color:#007f7f"># move to another pos w/o drawing</span>
-    joe.penup()
-    joe.forward(<span style="color:#ff0;font-weight:bold">100</span>)
-    joe.pendown()
+    <span style="color:#080;font-style:italic"># move to another pos w/o drawing</span>
+    joe<span style="color:#666">.</span>penup()
+    joe<span style="color:#666">.</span>forward(<span style="color:#666">100</span>)
+    joe<span style="color:#666">.</span>pendown()
 
-    <span style="color:#007f7f"># draw eyes with radius 75</span>
-    joe.circle(<span style="color:#ff0;font-weight:bold">75</span>)
-    joe.penup()
-    joe.right(<span style="color:#ff0;font-weight:bold">90</span>)
-    joe.forward(<span style="color:#ff0;font-weight:bold">50</span>)
-    joe.pendown()
-    joe.right(<span style="color:#ff0;font-weight:bold">90</span>)
-    joe.circle(<span style="color:#ff0;font-weight:bold">75</span>)
+    <span style="color:#080;font-style:italic"># draw eyes with radius 75</span>
+    joe<span style="color:#666">.</span>circle(<span style="color:#666">75</span>)
+    joe<span style="color:#666">.</span>penup()
+    joe<span style="color:#666">.</span>right(<span style="color:#666">90</span>)
+    joe<span style="color:#666">.</span>forward(<span style="color:#666">50</span>)
+    joe<span style="color:#666">.</span>pendown()
+    joe<span style="color:#666">.</span>right(<span style="color:#666">90</span>)
+    joe<span style="color:#666">.</span>circle(<span style="color:#666">75</span>)
 
-    <span style="color:#007f7f"># move to position for mouth...</span>
-    joe.penup()
-    joe.forward(<span style="color:#ff0;font-weight:bold">200</span>)
-    joe.right(<span style="color:#ff0;font-weight:bold">90</span>)
-    joe.forward(<span style="color:#ff0;font-weight:bold">200</span>)
-    joe.left(<span style="color:#ff0;font-weight:bold">90</span>)
-    joe.pendown()
+    <span style="color:#080;font-style:italic"># move to position for mouth...</span>
+    joe<span style="color:#666">.</span>penup()
+    joe<span style="color:#666">.</span>forward(<span style="color:#666">200</span>)
+    joe<span style="color:#666">.</span>right(<span style="color:#666">90</span>)
+    joe<span style="color:#666">.</span>forward(<span style="color:#666">200</span>)
+    joe<span style="color:#666">.</span>left(<span style="color:#666">90</span>)
+    joe<span style="color:#666">.</span>pendown()
 
-    <span style="color:#007f7f"># draw a semicircle</span>
-    joe.circle(<span style="color:#ff0;font-weight:bold">200</span>,<span style="color:#ff0;font-weight:bold">180</span>)
+    <span style="color:#080;font-style:italic"># draw a semicircle</span>
+    joe<span style="color:#666">.</span>circle(<span style="color:#666">200</span>,<span style="color:#666">180</span>)
 
 
-<span style="color:#fff;font-weight:bold">def</span> main():
-    <span style="color:#fff;font-weight:bold">try</span>:
-        <span style="color:#007f7f"># create a screen</span>
-        wn = turtle.Screen()
+<span style="color:#a2f;font-weight:bold">def</span> <span style="color:#00a000">main</span>():
+    <span style="color:#a2f;font-weight:bold">try</span>:
+        <span style="color:#080;font-style:italic"># create a screen</span>
+        wn <span style="color:#666">=</span> turtle<span style="color:#666">.</span>Screen()
         do_turtle_stuff()
-    <span style="color:#fff;font-weight:bold">finally</span>:
-        wn.mainloop()
+    <span style="color:#a2f;font-weight:bold">finally</span>:
+        wn<span style="color:#666">.</span>mainloop()
 
 
 main()</code></pre></div>

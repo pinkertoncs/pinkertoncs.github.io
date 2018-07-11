@@ -60,50 +60,50 @@
 <li>In this case, static means we do not need to instantiate the SISMain class to access the Database and CLI. This will allow us to access the methods of the Database directly from the commands</li>
 </ul></li>
 </ul>
-<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#fff;font-weight:bold">public</span> <span style="color:#fff;font-weight:bold">class</span> SISMain {
+<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#a2f;font-weight:bold">public</span> <span style="color:#a2f;font-weight:bold">class</span> <span style="color:#00f">SISMain</span> <span style="color:#666">{</span>
 
-	<span style="color:#fff;font-weight:bold">public</span> <span style="color:#fff;font-weight:bold">static</span> Database db;
-	<span style="color:#fff;font-weight:bold">public</span> <span style="color:#fff;font-weight:bold">static</span> CLI cli;
-	<span style="color:#fff;font-weight:bold">public</span> <span style="color:#fff;font-weight:bold">static</span> User currentUser;
+	<span style="color:#a2f;font-weight:bold">public</span> <span style="color:#a2f;font-weight:bold">static</span> Database db<span style="color:#666">;</span>
+	<span style="color:#a2f;font-weight:bold">public</span> <span style="color:#a2f;font-weight:bold">static</span> CLI cli<span style="color:#666">;</span>
+	<span style="color:#a2f;font-weight:bold">public</span> <span style="color:#a2f;font-weight:bold">static</span> User currentUser<span style="color:#666">;</span>
 
-	<span style="color:#fff;font-weight:bold">public</span> <span style="color:#fff;font-weight:bold">static</span> <span style="color:#fff;font-weight:bold">void</span> initialize(){
+	<span style="color:#a2f;font-weight:bold">public</span> <span style="color:#a2f;font-weight:bold">static</span> <span style="color:#0b0;font-weight:bold">void</span> <span style="color:#00a000">initialize</span><span style="color:#666">(){</span>
 
-		<span style="color:#007f7f">// initialize the database &amp; CLI
-</span><span style="color:#007f7f"></span>
-		<span style="color:#007f7f">// YOUR CODE HERE
-</span><span style="color:#007f7f"></span>	}
+		<span style="color:#080;font-style:italic">// initialize the database &amp; CLI
+</span><span style="color:#080;font-style:italic"></span>
+		<span style="color:#080;font-style:italic">// YOUR CODE HERE
+</span><span style="color:#080;font-style:italic"></span>	<span style="color:#666">}</span>
 
-	<span style="color:#fff;font-weight:bold">public</span> <span style="color:#fff;font-weight:bold">static</span> <span style="color:#fff;font-weight:bold">void</span> login(String uname, String pword){
+	<span style="color:#a2f;font-weight:bold">public</span> <span style="color:#a2f;font-weight:bold">static</span> <span style="color:#0b0;font-weight:bold">void</span> <span style="color:#00a000">login</span><span style="color:#666">(</span>String uname<span style="color:#666">,</span> String pword<span style="color:#666">){</span>
 
-		<span style="color:#007f7f">// try to find a User in the db with given credentials
-</span><span style="color:#007f7f"></span>		<span style="color:#007f7f">// if successful, set currentUser
-</span><span style="color:#007f7f"></span>
-		<span style="color:#007f7f">// YOUR CODE HERE
-</span><span style="color:#007f7f"></span>	}
+		<span style="color:#080;font-style:italic">// try to find a User in the db with given credentials
+</span><span style="color:#080;font-style:italic"></span>		<span style="color:#080;font-style:italic">// if successful, set currentUser
+</span><span style="color:#080;font-style:italic"></span>
+		<span style="color:#080;font-style:italic">// YOUR CODE HERE
+</span><span style="color:#080;font-style:italic"></span>	<span style="color:#666">}</span>
 
-	<span style="color:#fff;font-weight:bold">public</span> <span style="color:#fff;font-weight:bold">static</span> <span style="color:#fff;font-weight:bold">void</span> logout(){
+	<span style="color:#a2f;font-weight:bold">public</span> <span style="color:#a2f;font-weight:bold">static</span> <span style="color:#0b0;font-weight:bold">void</span> <span style="color:#00a000">logout</span><span style="color:#666">(){</span>
 
-		<span style="color:#007f7f">// unset currentUser - set to null
-</span><span style="color:#007f7f"></span>
-		<span style="color:#007f7f">// YOUR CODE HERE
-</span><span style="color:#007f7f"></span>	}
+		<span style="color:#080;font-style:italic">// unset currentUser - set to null
+</span><span style="color:#080;font-style:italic"></span>
+		<span style="color:#080;font-style:italic">// YOUR CODE HERE
+</span><span style="color:#080;font-style:italic"></span>	<span style="color:#666">}</span>
 
-	<span style="color:#fff;font-weight:bold">public</span> <span style="color:#fff;font-weight:bold">static</span> <span style="color:#fff;font-weight:bold">void</span> start(){
+	<span style="color:#a2f;font-weight:bold">public</span> <span style="color:#a2f;font-weight:bold">static</span> <span style="color:#0b0;font-weight:bold">void</span> <span style="color:#00a000">start</span><span style="color:#666">(){</span>
 
-		<span style="color:#007f7f">// start the cli
-</span><span style="color:#007f7f"></span>
-		<span style="color:#007f7f">// YOUR CODE HERE
-</span><span style="color:#007f7f"></span>	}
+		<span style="color:#080;font-style:italic">// start the cli
+</span><span style="color:#080;font-style:italic"></span>
+		<span style="color:#080;font-style:italic">// YOUR CODE HERE
+</span><span style="color:#080;font-style:italic"></span>	<span style="color:#666">}</span>
 
 
-	<span style="color:#fff;font-weight:bold">public</span> <span style="color:#fff;font-weight:bold">static</span> <span style="color:#fff;font-weight:bold">void</span> main(String args[]){
+	<span style="color:#a2f;font-weight:bold">public</span> <span style="color:#a2f;font-weight:bold">static</span> <span style="color:#0b0;font-weight:bold">void</span> <span style="color:#00a000">main</span><span style="color:#666">(</span>String args<span style="color:#666">[]){</span>
 
-		<span style="color:#007f7f">// notice how we can initialize and start SISMain without instantiating
-</span><span style="color:#007f7f"></span>		SISMain.<span style="color:#007f7f">initialize</span>();
-		SISMain.<span style="color:#007f7f">start</span>();
+		<span style="color:#080;font-style:italic">// notice how we can initialize and start SISMain without instantiating
+</span><span style="color:#080;font-style:italic"></span>		SISMain<span style="color:#666">.</span><span style="color:#b44">initialize</span><span style="color:#666">();</span>
+		SISMain<span style="color:#666">.</span><span style="color:#b44">start</span><span style="color:#666">();</span>
 
-	}
-}</code></pre></div>
+	<span style="color:#666">}</span>
+<span style="color:#666">}</span></code></pre></div>
 <h2 id="commands">Commands</h2>
 
 <ul>
@@ -139,14 +139,14 @@
 </ul></li>
 <li><strong>DO NOT FORGET TO PUT LOGIN IN THE COMMANDS HASHMAP!</strong></li>
 </ul>
-<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#fff;font-weight:bold">class</span> loginCmd <span style="color:#fff;font-weight:bold">implements</span> Command{
-    <span style="color:#fff;font-weight:bold">public</span> <span style="color:#fff;font-weight:bold">void</span> run(String[] params) {
+<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#a2f;font-weight:bold">class</span> <span style="color:#00f">loginCmd</span> <span style="color:#a2f;font-weight:bold">implements</span> Command<span style="color:#666">{</span>
+    <span style="color:#a2f;font-weight:bold">public</span> <span style="color:#0b0;font-weight:bold">void</span> <span style="color:#00a000">run</span><span style="color:#666">(</span>String<span style="color:#666">[]</span> params<span style="color:#666">)</span> <span style="color:#666">{</span>
 
-        <span style="color:#007f7f">// TODO: verify that params is not null and has length at least 2
-</span><span style="color:#007f7f"></span>
-        SISMain.<span style="color:#007f7f">login</span>( params[0], params[1] )
-    }
-}</code></pre></div>
+        <span style="color:#080;font-style:italic">// TODO: verify that params is not null and has length at least 2
+</span><span style="color:#080;font-style:italic"></span>
+        SISMain<span style="color:#666">.</span><span style="color:#b44">login</span><span style="color:#666">(</span> params<span style="color:#666">[</span>0<span style="color:#666">],</span> params<span style="color:#666">[</span>1<span style="color:#666">]</span> <span style="color:#666">)</span>
+    <span style="color:#666">}</span>
+<span style="color:#666">}</span></code></pre></div>
 <h2 id="testing-you-cli">Testing you CLI</h2>
 
 <ul>

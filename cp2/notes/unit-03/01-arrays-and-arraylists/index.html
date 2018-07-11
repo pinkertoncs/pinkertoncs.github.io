@@ -77,11 +77,11 @@
 <li>You must declare the type and length</li>
 <li>You can initialize all element using a list with braces, but only when you declare the array</li>
 </ul>
-<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#fff;font-weight:bold">int</span>[] foo = <span style="color:#fff;font-weight:bold">new</span> <span style="color:#fff;font-weight:bold">int</span>[5];                <span style="color:#007f7f">// 5 uninitialized integers
-</span><span style="color:#007f7f"></span>
-<span style="color:#fff;font-weight:bold">int</span>[] bar = <span style="color:#fff;font-weight:bold">new</span> <span style="color:#fff;font-weight:bold">int</span>[]{ 16, 2, 77, 40, 12071 };
+<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#0b0;font-weight:bold">int</span><span style="color:#666">[]</span> foo <span style="color:#666">=</span> <span style="color:#a2f;font-weight:bold">new</span> <span style="color:#0b0;font-weight:bold">int</span><span style="color:#666">[</span>5<span style="color:#666">];</span>                <span style="color:#080;font-style:italic">// 5 uninitialized integers
+</span><span style="color:#080;font-style:italic"></span>
+<span style="color:#0b0;font-weight:bold">int</span><span style="color:#666">[]</span> bar <span style="color:#666">=</span> <span style="color:#a2f;font-weight:bold">new</span> <span style="color:#0b0;font-weight:bold">int</span><span style="color:#666">[]{</span> 16<span style="color:#666">,</span> 2<span style="color:#666">,</span> 77<span style="color:#666">,</span> 40<span style="color:#666">,</span> 12071 <span style="color:#666">};</span>
 
-//foo = { 1, 2, 3, 4, 5 };         // can<span style="color:#f00">&#39;</span>t <span style="color:#fff;font-weight:bold">do</span> it.</code></pre></div>
+<span style="color:#666">//</span>foo <span style="color:#666">=</span> <span style="color:#666">{</span> 1<span style="color:#666">,</span> 2<span style="color:#666">,</span> 3<span style="color:#666">,</span> 4<span style="color:#666">,</span> 5 <span style="color:#666">};</span>         <span style="color:#666">//</span> can<span style="">&#39;</span>t <span style="color:#a2f;font-weight:bold">do</span> it<span style="color:#666">.</span></code></pre></div>
 <h2 id="arrays-in-memory">Arrays in Memory</h2>
 
 <ul>
@@ -110,37 +110,37 @@
 </ul>
 
 <h2 id="iterating-over-an-array">Iterating over an Array</h2>
-<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#fff;font-weight:bold">int</span>[] my_arr = <span style="color:#fff;font-weight:bold">new</span> <span style="color:#fff;font-weight:bold">int</span>[10];
+<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#0b0;font-weight:bold">int</span><span style="color:#666">[]</span> my_arr <span style="color:#666">=</span> <span style="color:#a2f;font-weight:bold">new</span> <span style="color:#0b0;font-weight:bold">int</span><span style="color:#666">[</span>10<span style="color:#666">];</span>
 
-<span style="color:#fff;font-weight:bold">for</span>(<span style="color:#fff;font-weight:bold">int</span> i = 0; i &lt; my_arr.<span style="color:#007f7f">length</span>; i++) {
-    my_arr[i] = -1;
-}</code></pre></div>
+<span style="color:#a2f;font-weight:bold">for</span><span style="color:#666">(</span><span style="color:#0b0;font-weight:bold">int</span> i <span style="color:#666">=</span> 0<span style="color:#666">;</span> i <span style="color:#666">&lt;</span> my_arr<span style="color:#666">.</span><span style="color:#b44">length</span><span style="color:#666">;</span> i<span style="color:#666">++)</span> <span style="color:#666">{</span>
+    my_arr<span style="color:#666">[</span>i<span style="color:#666">]</span> <span style="color:#666">=</span> <span style="color:#666">-</span>1<span style="color:#666">;</span>
+<span style="color:#666">}</span></code></pre></div>
 <h2 id="multidimensional-arrays">Multidimensional Arrays</h2>
 
 <ul>
 <li>Sometimes you want to store a tabular data (e.g. multiplication table).  You can use a two-dimensional array for this:</li>
 </ul>
-<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#fff;font-weight:bold">int</span> NUM_ROWS = 3;
-<span style="color:#fff;font-weight:bold">int</span> NUM_COLS = 10;
+<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#0b0;font-weight:bold">int</span> NUM_ROWS <span style="color:#666">=</span> 3<span style="color:#666">;</span>
+<span style="color:#0b0;font-weight:bold">int</span> NUM_COLS <span style="color:#666">=</span> 10<span style="color:#666">;</span>
 
-<span style="color:#fff;font-weight:bold">int</span>[][] matrix = <span style="color:#fff;font-weight:bold">new</span> <span style="color:#fff;font-weight:bold">int</span>[NUM_ROWS][NUM_COLS];
+<span style="color:#0b0;font-weight:bold">int</span><span style="color:#666">[][]</span> matrix <span style="color:#666">=</span> <span style="color:#a2f;font-weight:bold">new</span> <span style="color:#0b0;font-weight:bold">int</span><span style="color:#666">[</span>NUM_ROWS<span style="color:#666">][</span>NUM_COLS<span style="color:#666">];</span>
 
-<span style="color:#fff;font-weight:bold">for</span>(<span style="color:#fff;font-weight:bold">int</span> row = 0; row &lt; NUM_ROWS; row++) {
-    <span style="color:#fff;font-weight:bold">for</span>(<span style="color:#fff;font-weight:bold">int</span> col = 0; col &lt; NUM_COLS; col++) {
-        matrix[row][col] = (row+ 1) * (col + 1);
-    } <span style="color:#007f7f">//end loop for columns
-</span><span style="color:#007f7f"></span>} //end loop <span style="color:#fff;font-weight:bold">for</span> rows</code></pre></div>
+<span style="color:#a2f;font-weight:bold">for</span><span style="color:#666">(</span><span style="color:#0b0;font-weight:bold">int</span> row <span style="color:#666">=</span> 0<span style="color:#666">;</span> row <span style="color:#666">&lt;</span> NUM_ROWS<span style="color:#666">;</span> row<span style="color:#666">++)</span> <span style="color:#666">{</span>
+    <span style="color:#a2f;font-weight:bold">for</span><span style="color:#666">(</span><span style="color:#0b0;font-weight:bold">int</span> col <span style="color:#666">=</span> 0<span style="color:#666">;</span> col <span style="color:#666">&lt;</span> NUM_COLS<span style="color:#666">;</span> col<span style="color:#666">++)</span> <span style="color:#666">{</span>
+        matrix<span style="color:#666">[</span>row<span style="color:#666">][</span>col<span style="color:#666">]</span> <span style="color:#666">=</span> <span style="color:#666">(</span>row<span style="color:#666">+</span> 1<span style="color:#666">)</span> <span style="color:#666">*</span> <span style="color:#666">(</span>col <span style="color:#666">+</span> 1<span style="color:#666">);</span>
+    <span style="color:#666">}</span> <span style="color:#080;font-style:italic">//end loop for columns
+</span><span style="color:#080;font-style:italic"></span><span style="color:#666">}</span> <span style="color:#666">//</span>end loop <span style="color:#a2f;font-weight:bold">for</span> rows</code></pre></div>
 <h2 id="passing-and-returning-arrays">Passing and Returning Arrays</h2>
 
 <ul>
 <li>Passing</li>
 </ul>
-<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#fff;font-weight:bold">public</span> <span style="color:#fff;font-weight:bold">static</span> <span style="color:#fff;font-weight:bold">void</span> print_array(<span style="color:#fff;font-weight:bold">int</span>[] arr) {
+<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#a2f;font-weight:bold">public</span> <span style="color:#a2f;font-weight:bold">static</span> <span style="color:#0b0;font-weight:bold">void</span> <span style="color:#00a000">print_array</span><span style="color:#666">(</span><span style="color:#0b0;font-weight:bold">int</span><span style="color:#666">[]</span> arr<span style="color:#666">)</span> <span style="color:#666">{</span>
 
-    <span style="color:#fff;font-weight:bold">for</span>(<span style="color:#fff;font-weight:bold">int</span> i = 0; i &lt; arr.<span style="color:#007f7f">length</span>; i++) {
-        System.<span style="color:#007f7f">out</span>.<span style="color:#007f7f">println</span>(arr[i]);
-    }
-}</code></pre></div>
+    <span style="color:#a2f;font-weight:bold">for</span><span style="color:#666">(</span><span style="color:#0b0;font-weight:bold">int</span> i <span style="color:#666">=</span> 0<span style="color:#666">;</span> i <span style="color:#666">&lt;</span> arr<span style="color:#666">.</span><span style="color:#b44">length</span><span style="color:#666">;</span> i<span style="color:#666">++)</span> <span style="color:#666">{</span>
+        System<span style="color:#666">.</span><span style="color:#b44">out</span><span style="color:#666">.</span><span style="color:#b44">println</span><span style="color:#666">(</span>arr<span style="color:#666">[</span>i<span style="color:#666">]);</span>
+    <span style="color:#666">}</span>
+<span style="color:#666">}</span></code></pre></div>
 <ul>
 <li>Returning
 
@@ -152,11 +152,11 @@
 </ul></li>
 </ul></li>
 </ul>
-<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#fff;font-weight:bold">public</span> <span style="color:#fff;font-weight:bold">static</span> <span style="color:#fff;font-weight:bold">int</span>[] change_array( <span style="color:#fff;font-weight:bold">int</span>[] a ){
+<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#a2f;font-weight:bold">public</span> <span style="color:#a2f;font-weight:bold">static</span> <span style="color:#0b0;font-weight:bold">int</span><span style="color:#666">[]</span> <span style="color:#00a000">change_array</span><span style="color:#666">(</span> <span style="color:#0b0;font-weight:bold">int</span><span style="color:#666">[]</span> a <span style="color:#666">){</span>
 
-    a[0] = 5;
-    <span style="color:#fff;font-weight:bold">return</span> a;
-}</code></pre></div>
+    a<span style="color:#666">[</span>0<span style="color:#666">]</span> <span style="color:#666">=</span> 5<span style="color:#666">;</span>
+    <span style="color:#a2f;font-weight:bold">return</span> a<span style="color:#666">;</span>
+<span style="color:#666">}</span></code></pre></div>
 <h2 id="java-arraylist-api">Java ArrayList API</h2>
 
 <ul>
@@ -201,32 +201,32 @@
 <ul>
 <li>Optionally, declare a type and/or size</li>
 </ul>
-<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#007f7f">// declare an ArrayList of initial Size 15 that stores Objects
-</span><span style="color:#007f7f"></span>ArrayList aList = <span style="color:#fff;font-weight:bold">new</span> ArrayList(15);
+<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#080;font-style:italic">// declare an ArrayList of initial Size 15 that stores Objects
+</span><span style="color:#080;font-style:italic"></span>ArrayList aList <span style="color:#666">=</span> <span style="color:#a2f;font-weight:bold">new</span> ArrayList<span style="color:#666">(</span>15<span style="color:#666">);</span>
 
-<span style="color:#007f7f">// declare ArrayList with default size that stores
-</span><span style="color:#007f7f">// Integers  (Class wrappers around int)
-</span><span style="color:#007f7f"></span>ArrayList&lt;Integer&gt; iList = <span style="color:#fff;font-weight:bold">new</span> ArrayList&lt;Integer&gt;();</code></pre></div>
+<span style="color:#080;font-style:italic">// declare ArrayList with default size that stores
+</span><span style="color:#080;font-style:italic">// Integers  (Class wrappers around int)
+</span><span style="color:#080;font-style:italic"></span>ArrayList<span style="color:#666">&lt;</span>Integer<span style="color:#666">&gt;</span> iList <span style="color:#666">=</span> <span style="color:#a2f;font-weight:bold">new</span> ArrayList<span style="color:#666">&lt;</span>Integer<span style="color:#666">&gt;();</span></code></pre></div>
 <h2 id="iterating-over-and-arraylist">Iterating over and ArrayList</h2>
-<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">ArrayList&lt;Integer&gt; iList = <span style="color:#fff;font-weight:bold">new</span> ArrayList&lt;Integer&gt;();
+<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">ArrayList<span style="color:#666">&lt;</span>Integer<span style="color:#666">&gt;</span> iList <span style="color:#666">=</span> <span style="color:#a2f;font-weight:bold">new</span> ArrayList<span style="color:#666">&lt;</span>Integer<span style="color:#666">&gt;();</span>
 
-<span style="color:#fff;font-weight:bold">for</span>(<span style="color:#fff;font-weight:bold">int</span> i = 0; i &lt; 10; i++) {
-    iList.<span style="color:#007f7f">add</span>(-1);
-}
+<span style="color:#a2f;font-weight:bold">for</span><span style="color:#666">(</span><span style="color:#0b0;font-weight:bold">int</span> i <span style="color:#666">=</span> 0<span style="color:#666">;</span> i <span style="color:#666">&lt;</span> 10<span style="color:#666">;</span> i<span style="color:#666">++)</span> <span style="color:#666">{</span>
+    iList<span style="color:#666">.</span><span style="color:#b44">add</span><span style="color:#666">(-</span>1<span style="color:#666">);</span>
+<span style="color:#666">}</span>
 
-<span style="color:#fff;font-weight:bold">for</span>(<span style="color:#fff;font-weight:bold">int</span> i = 0; i &lt; iList.<span style="color:#007f7f">size</span>(); i++) {
-    System.<span style="color:#007f7f">out</span>.<span style="color:#007f7f">println</span>(iList.<span style="color:#007f7f">get</span>(i));
-}</code></pre></div>
+<span style="color:#a2f;font-weight:bold">for</span><span style="color:#666">(</span><span style="color:#0b0;font-weight:bold">int</span> i <span style="color:#666">=</span> 0<span style="color:#666">;</span> i <span style="color:#666">&lt;</span> iList<span style="color:#666">.</span><span style="color:#b44">size</span><span style="color:#666">();</span> i<span style="color:#666">++)</span> <span style="color:#666">{</span>
+    System<span style="color:#666">.</span><span style="color:#b44">out</span><span style="color:#666">.</span><span style="color:#b44">println</span><span style="color:#666">(</span>iList<span style="color:#666">.</span><span style="color:#b44">get</span><span style="color:#666">(</span>i<span style="color:#666">));</span>
+<span style="color:#666">}</span></code></pre></div>
 <h2 id="passing-and-returning-arraylists">Passing and Returning ArrayLists</h2>
 
 <ul>
 <li>Passing</li>
 </ul>
-<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#fff;font-weight:bold">public</span> <span style="color:#fff;font-weight:bold">static</span> <span style="color:#fff;font-weight:bold">void</span> print_array(ArrayList&lt;Integer&gt; iList) {
-    <span style="color:#fff;font-weight:bold">for</span>(<span style="color:#fff;font-weight:bold">int</span> i = 0; i &lt; iList.<span style="color:#007f7f">size</span>(); i++) {
-        System.<span style="color:#007f7f">out</span>.<span style="color:#007f7f">println</span>(iList.<span style="color:#007f7f">get</span>(i));
-    }
-}</code></pre></div>
+<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#a2f;font-weight:bold">public</span> <span style="color:#a2f;font-weight:bold">static</span> <span style="color:#0b0;font-weight:bold">void</span> <span style="color:#00a000">print_array</span><span style="color:#666">(</span>ArrayList<span style="color:#666">&lt;</span>Integer<span style="color:#666">&gt;</span> iList<span style="color:#666">)</span> <span style="color:#666">{</span>
+    <span style="color:#a2f;font-weight:bold">for</span><span style="color:#666">(</span><span style="color:#0b0;font-weight:bold">int</span> i <span style="color:#666">=</span> 0<span style="color:#666">;</span> i <span style="color:#666">&lt;</span> iList<span style="color:#666">.</span><span style="color:#b44">size</span><span style="color:#666">();</span> i<span style="color:#666">++)</span> <span style="color:#666">{</span>
+        System<span style="color:#666">.</span><span style="color:#b44">out</span><span style="color:#666">.</span><span style="color:#b44">println</span><span style="color:#666">(</span>iList<span style="color:#666">.</span><span style="color:#b44">get</span><span style="color:#666">(</span>i<span style="color:#666">));</span>
+    <span style="color:#666">}</span>
+<span style="color:#666">}</span></code></pre></div>
 <ul>
 <li>Returning
 
@@ -238,11 +238,11 @@
 </ul></li>
 </ul></li>
 </ul>
-<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#fff;font-weight:bold">public</span> <span style="color:#fff;font-weight:bold">static</span> ArrayList&lt;Integer&gt; change_array( ArrayList&lt;Integer&gt; iList){
+<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#a2f;font-weight:bold">public</span> <span style="color:#a2f;font-weight:bold">static</span> ArrayList<span style="color:#666">&lt;</span>Integer<span style="color:#666">&gt;</span> <span style="color:#00a000">change_array</span><span style="color:#666">(</span> ArrayList<span style="color:#666">&lt;</span>Integer<span style="color:#666">&gt;</span> iList<span style="color:#666">){</span>
 
-    iList.<span style="color:#007f7f">set</span>(0,5);
-    <span style="color:#fff;font-weight:bold">return</span> iList;
-}</code></pre></div>
+    iList<span style="color:#666">.</span><span style="color:#b44">set</span><span style="color:#666">(</span>0<span style="color:#666">,</span>5<span style="color:#666">);</span>
+    <span style="color:#a2f;font-weight:bold">return</span> iList<span style="color:#666">;</span>
+<span style="color:#666">}</span></code></pre></div>
 </main>
 
   <footer>

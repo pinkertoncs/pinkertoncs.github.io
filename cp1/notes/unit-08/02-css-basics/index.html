@@ -67,26 +67,26 @@
 <li>Example:</li>
 </ul></li>
 </ul>
-<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html"> <span style="color:#0f0;font-weight:bold">&lt;!DOCTYPE html&gt;</span>
-&lt;<span style="font-weight:bold">html</span>&gt;
-	&lt;<span style="font-weight:bold">head</span>&gt;
-		&lt;<span style="font-weight:bold">title</span>&gt;Template Page&lt;/<span style="font-weight:bold">title</span>&gt;
-		<span style="color:#007f7f">&lt;!-- optional: external stylesheet
-</span><span style="color:#007f7f">			will show error if file doesn&#39;t exist --&gt;</span>
-		&lt;<span style="font-weight:bold">link</span> <span style="color:#007f7f">rel</span>=<span style="color:#0ff;font-weight:bold">&#34;stylesheet&#34;</span> <span style="color:#007f7f">type</span>=<span style="color:#0ff;font-weight:bold">&#34;text/css&#34;</span> <span style="color:#007f7f">href</span>=<span style="color:#0ff;font-weight:bold">&#34;mystyle.css&#34;</span>&gt;
-		&lt;<span style="font-weight:bold">style</span>&gt;
-			<span style="color:#007f7f">/* comment: internal CSS goes here */</span>
-			<span style="font-weight:bold">body</span> {
-				<span style="color:#fff;font-weight:bold">background-color</span>: <span style="color:#fff;font-weight:bold">lightblue</span>;
+<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html"> <span style="color:#080">&lt;!DOCTYPE html&gt;</span>
+&lt;<span style="color:#008000;font-weight:bold">html</span>&gt;
+	&lt;<span style="color:#008000;font-weight:bold">head</span>&gt;
+		&lt;<span style="color:#008000;font-weight:bold">title</span>&gt;Template Page&lt;/<span style="color:#008000;font-weight:bold">title</span>&gt;
+		<span style="color:#080;font-style:italic">&lt;!-- optional: external stylesheet
+</span><span style="color:#080;font-style:italic">			will show error if file doesn&#39;t exist --&gt;</span>
+		&lt;<span style="color:#008000;font-weight:bold">link</span> <span style="color:#b44">rel</span><span style="color:#666">=</span><span style="color:#b44">&#34;stylesheet&#34;</span> <span style="color:#b44">type</span><span style="color:#666">=</span><span style="color:#b44">&#34;text/css&#34;</span> <span style="color:#b44">href</span><span style="color:#666">=</span><span style="color:#b44">&#34;mystyle.css&#34;</span>&gt;
+		&lt;<span style="color:#008000;font-weight:bold">style</span>&gt;
+			<span style="color:#080;font-style:italic">/* comment: internal CSS goes here */</span>
+			<span style="color:#008000;font-weight:bold">body</span> {
+				<span style="color:#a2f;font-weight:bold">background-color</span>: <span style="color:#a2f;font-weight:bold">lightblue</span>;
 			}
-		&lt;/<span style="font-weight:bold">style</span>&gt;
-	&lt;/<span style="font-weight:bold">head</span>&gt;
-	&lt;<span style="font-weight:bold">body</span>&gt;
-		<span style="color:#007f7f">&lt;!-- inline CSS uses the &#39;style&#39; attribute --&gt;</span>
-		&lt;<span style="font-weight:bold">h1</span> <span style="color:#007f7f">style</span>=<span style="color:#0ff;font-weight:bold">&#39;text-align:center;&#39;</span>&gt; CSS Template &lt;/<span style="font-weight:bold">h1</span>&gt;
-		&lt;<span style="font-weight:bold">p</span>&gt; Hello CSS! &lt;/<span style="font-weight:bold">p</span>&gt;
-	&lt;/<span style="font-weight:bold">body</span>&gt;
-&lt;/<span style="font-weight:bold">html</span>&gt;</code></pre></div>
+		&lt;/<span style="color:#008000;font-weight:bold">style</span>&gt;
+	&lt;/<span style="color:#008000;font-weight:bold">head</span>&gt;
+	&lt;<span style="color:#008000;font-weight:bold">body</span>&gt;
+		<span style="color:#080;font-style:italic">&lt;!-- inline CSS uses the &#39;style&#39; attribute --&gt;</span>
+		&lt;<span style="color:#008000;font-weight:bold">h1</span> <span style="color:#b44">style</span><span style="color:#666">=</span><span style="color:#b44">&#39;text-align:center;&#39;</span>&gt; CSS Template &lt;/<span style="color:#008000;font-weight:bold">h1</span>&gt;
+		&lt;<span style="color:#008000;font-weight:bold">p</span>&gt; Hello CSS! &lt;/<span style="color:#008000;font-weight:bold">p</span>&gt;
+	&lt;/<span style="color:#008000;font-weight:bold">body</span>&gt;
+&lt;/<span style="color:#008000;font-weight:bold">html</span>&gt;</code></pre></div>
 <h2 id="selectors-and-pseudos">Selectors and Pseudos</h2>
 
 <ul>
@@ -111,54 +111,54 @@
 <li>The colon (:) is the pseudo-class selector</li>
 </ul></li>
 </ul>
-<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="font-weight:bold">html</span>&gt;
-	&lt;<span style="font-weight:bold">head</span>&gt;
-	&lt;<span style="font-weight:bold">style</span>&gt;
+<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#008000;font-weight:bold">html</span>&gt;
+	&lt;<span style="color:#008000;font-weight:bold">head</span>&gt;
+	&lt;<span style="color:#008000;font-weight:bold">style</span>&gt;
 
-		<span style="font-weight:bold">p</span> {
-			<span style="color:#007f7f">/* apply these styles to all p elements */</span>
+		<span style="color:#008000;font-weight:bold">p</span> {
+			<span style="color:#080;font-style:italic">/* apply these styles to all p elements */</span>
 		}
 
-		<span style="font-weight:bold">p</span>, <span style="font-weight:bold">h1</span>{
-			<span style="color:#007f7f">/* apply these styles to all p AND h1 elements
-</span><span style="color:#007f7f">		}
-</span><span style="color:#007f7f">
-</span><span style="color:#007f7f">		#no1 {
-</span><span style="color:#007f7f">			/* apply these styles to THE element with id=no1 */</span>
+		<span style="color:#008000;font-weight:bold">p</span><span style="color:#666">,</span> <span style="color:#008000;font-weight:bold">h1</span>{
+			<span style="color:#080;font-style:italic">/* apply these styles to all p AND h1 elements
+</span><span style="color:#080;font-style:italic">		}
+</span><span style="color:#080;font-style:italic">
+</span><span style="color:#080;font-style:italic">		#no1 {
+</span><span style="color:#080;font-style:italic">			/* apply these styles to THE element with id=no1 */</span>
 		}
 
-		<span style="font-weight:bold">p</span>.type1 {
-			<span style="color:#007f7f">/* apply these styles to ALL p elements with class=type1 */</span>
-			<span style="color:#007f7f">/* omit the p to apply a class to different element types */</span>
+		<span style="color:#008000;font-weight:bold">p</span>.<span style="color:#00f">type1</span> {
+			<span style="color:#080;font-style:italic">/* apply these styles to ALL p elements with class=type1 */</span>
+			<span style="color:#080;font-style:italic">/* omit the p to apply a class to different element types */</span>
 		}
 
-		#div2 <span style="font-weight:bold">p</span> {
-			<span style="color:#007f7f">/* apply these styles to all p elements INSIDE of element with id=div2 */</span>
+		#<span style="color:#00f;font-weight:bold">div2</span> <span style="color:#008000;font-weight:bold">p</span> {
+			<span style="color:#080;font-style:italic">/* apply these styles to all p elements INSIDE of element with id=div2 */</span>
 		}
 
-		<span style="font-weight:bold">p</span>:hover {
-			<span style="color:#007f7f">/* apply these styles to the p with the mouse pointer over it */</span>
+		<span style="color:#008000;font-weight:bold">p</span>:<span style="color:#a2f">hover</span> {
+			<span style="color:#080;font-style:italic">/* apply these styles to the p with the mouse pointer over it */</span>
 		}
-	&lt;/<span style="font-weight:bold">style</span>&gt;
+	&lt;/<span style="color:#008000;font-weight:bold">style</span>&gt;
 
-	&lt;<span style="font-weight:bold">body</span>&gt;
+	&lt;<span style="color:#008000;font-weight:bold">body</span>&gt;
 
-		&lt;<span style="font-weight:bold">h1</span>&gt; Heading &lt;/<span style="font-weight:bold">h1</span>&gt;
+		&lt;<span style="color:#008000;font-weight:bold">h1</span>&gt; Heading &lt;/<span style="color:#008000;font-weight:bold">h1</span>&gt;
 
-		&lt;<span style="font-weight:bold">div</span> <span style="color:#007f7f">id</span>=<span style="color:#0ff;font-weight:bold">&#39;div1&#39;</span>&gt;
-			&lt;<span style="font-weight:bold">p</span> <span style="color:#007f7f">id</span>=<span style="color:#0ff;font-weight:bold">&#39;no1&#39;</span> <span style="color:#007f7f">class</span>=<span style="color:#0ff;font-weight:bold">&#39;type1&#39;</span>&gt; paragraph 1 &lt;/<span style="font-weight:bold">p</span>&gt;
-			&lt;<span style="font-weight:bold">p</span>&gt; paragraph 2 &lt;/<span style="font-weight:bold">p</span>&gt;
-			&lt;<span style="font-weight:bold">p</span> <span style="color:#007f7f">class</span>=<span style="color:#0ff;font-weight:bold">&#39;type1&#39;</span>&gt; paragraph 3 &lt;/<span style="font-weight:bold">p</span>&gt;
-			&lt;<span style="font-weight:bold">p</span>&gt; paragraph 4 &lt;/<span style="font-weight:bold">p</span>&gt;
-			&lt;<span style="font-weight:bold">p</span> <span style="color:#007f7f">class</span>=<span style="color:#0ff;font-weight:bold">&#39;type1&#39;</span>&gt; paragraph 5 &lt;/<span style="font-weight:bold">p</span>&gt;
-	&lt;/<span style="font-weight:bold">div</span>&gt;
+		&lt;<span style="color:#008000;font-weight:bold">div</span> <span style="color:#b44">id</span><span style="color:#666">=</span><span style="color:#b44">&#39;div1&#39;</span>&gt;
+			&lt;<span style="color:#008000;font-weight:bold">p</span> <span style="color:#b44">id</span><span style="color:#666">=</span><span style="color:#b44">&#39;no1&#39;</span> <span style="color:#b44">class</span><span style="color:#666">=</span><span style="color:#b44">&#39;type1&#39;</span>&gt; paragraph 1 &lt;/<span style="color:#008000;font-weight:bold">p</span>&gt;
+			&lt;<span style="color:#008000;font-weight:bold">p</span>&gt; paragraph 2 &lt;/<span style="color:#008000;font-weight:bold">p</span>&gt;
+			&lt;<span style="color:#008000;font-weight:bold">p</span> <span style="color:#b44">class</span><span style="color:#666">=</span><span style="color:#b44">&#39;type1&#39;</span>&gt; paragraph 3 &lt;/<span style="color:#008000;font-weight:bold">p</span>&gt;
+			&lt;<span style="color:#008000;font-weight:bold">p</span>&gt; paragraph 4 &lt;/<span style="color:#008000;font-weight:bold">p</span>&gt;
+			&lt;<span style="color:#008000;font-weight:bold">p</span> <span style="color:#b44">class</span><span style="color:#666">=</span><span style="color:#b44">&#39;type1&#39;</span>&gt; paragraph 5 &lt;/<span style="color:#008000;font-weight:bold">p</span>&gt;
+	&lt;/<span style="color:#008000;font-weight:bold">div</span>&gt;
 
-	&lt;<span style="font-weight:bold">div</span> <span style="color:#007f7f">id</span>=<span style="color:#0ff;font-weight:bold">&#39;div2&#39;</span>&gt;
-		&lt;<span style="font-weight:bold">p</span>&gt; The p in div2 &lt;/<span style="font-weight:bold">p</span>&gt;
-	&lt;/<span style="font-weight:bold">div</span>&gt;
+	&lt;<span style="color:#008000;font-weight:bold">div</span> <span style="color:#b44">id</span><span style="color:#666">=</span><span style="color:#b44">&#39;div2&#39;</span>&gt;
+		&lt;<span style="color:#008000;font-weight:bold">p</span>&gt; The p in div2 &lt;/<span style="color:#008000;font-weight:bold">p</span>&gt;
+	&lt;/<span style="color:#008000;font-weight:bold">div</span>&gt;
 
-	&lt;/<span style="font-weight:bold">body</span>&gt;
-&lt;/<span style="font-weight:bold">html</span>&gt;</code></pre></div>
+	&lt;/<span style="color:#008000;font-weight:bold">body</span>&gt;
+&lt;/<span style="color:#008000;font-weight:bold">html</span>&gt;</code></pre></div>
 <h2 id="styling-element">Styling Element</h2>
 
 <ul>

@@ -54,8 +54,8 @@
 <li><strong>Primitive types</strong> are the basic, built-in types</li>
 
 <li><p>All variables nut be <strong>declared</strong> with their type</p>
-<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#fff;font-weight:bold">int</span> a_number;
-<span style="color:#fff;font-weight:bold">float</span> pi = 3.<span style="color:#007f7f">14</span>;</code></pre></div></li>
+<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#0b0;font-weight:bold">int</span> a_number<span style="color:#666">;</span>
+<span style="color:#0b0;font-weight:bold">float</span> pi <span style="color:#666">=</span> 3<span style="color:#666">.</span><span style="color:#b44">14</span><span style="color:#666">;</span></code></pre></div></li>
 
 <li><p><strong>Initialize variables</strong> by giving then a value or rely on their default <strong>Uninitialized Value</strong></p></li>
 </ul>
@@ -127,26 +127,26 @@
 </table>
 
 <h3 id="demo">Demo</h3>
-<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#007f7f">// declare integer a
-</span><span style="color:#007f7f"></span><span style="color:#fff;font-weight:bold">int</span> a;
+<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#080;font-style:italic">// declare integer a
+</span><span style="color:#080;font-style:italic"></span><span style="color:#0b0;font-weight:bold">int</span> a<span style="color:#666">;</span>
 
-<span style="color:#007f7f">// initialize a
-</span><span style="color:#007f7f"></span>a = 5;
+<span style="color:#080;font-style:italic">// initialize a
+</span><span style="color:#080;font-style:italic"></span>a <span style="color:#666">=</span> 5<span style="color:#666">;</span>
 
-<span style="color:#007f7f">// print a
-</span><span style="color:#007f7f"></span>System.<span style="color:#007f7f">out</span>.<span style="color:#007f7f">println</span>(a);
+<span style="color:#080;font-style:italic">// print a
+</span><span style="color:#080;font-style:italic"></span>System<span style="color:#666">.</span><span style="color:#b44">out</span><span style="color:#666">.</span><span style="color:#b44">println</span><span style="color:#666">(</span>a<span style="color:#666">);</span>
 
-<span style="color:#007f7f">// declare and initialize float b
-</span><span style="color:#007f7f"></span><span style="color:#fff;font-weight:bold">float</span> b = 3.<span style="color:#007f7f">14</span>;
+<span style="color:#080;font-style:italic">// declare and initialize float b
+</span><span style="color:#080;font-style:italic"></span><span style="color:#0b0;font-weight:bold">float</span> b <span style="color:#666">=</span> 3<span style="color:#666">.</span><span style="color:#b44">14</span><span style="color:#666">;</span>
 
-<span style="color:#007f7f">// declare and initialize char c
-</span><span style="color:#007f7f"></span><span style="color:#fff;font-weight:bold">char</span> c = <span style="color:#0ff;font-weight:bold">&#39;A&#39;</span>;
+<span style="color:#080;font-style:italic">// declare and initialize char c
+</span><span style="color:#080;font-style:italic"></span><span style="color:#0b0;font-weight:bold">char</span> c <span style="color:#666">=</span> <span style="color:#b44">&#39;A&#39;</span><span style="color:#666">;</span>
 
-<span style="color:#007f7f">// assign char value to int
-</span><span style="color:#007f7f"></span><span style="color:#fff;font-weight:bold">int</span> d = <span style="color:#0ff;font-weight:bold">&#39;A&#39;</span>;
+<span style="color:#080;font-style:italic">// assign char value to int
+</span><span style="color:#080;font-style:italic"></span><span style="color:#0b0;font-weight:bold">int</span> d <span style="color:#666">=</span> <span style="color:#b44">&#39;A&#39;</span><span style="color:#666">;</span>
 
-<span style="color:#007f7f">//print d
-</span><span style="color:#007f7f"></span>System.<span style="color:#007f7f">out</span>.<span style="color:#007f7f">println</span>(d);</code></pre></div>
+<span style="color:#080;font-style:italic">//print d
+</span><span style="color:#080;font-style:italic"></span>System<span style="color:#666">.</span><span style="color:#b44">out</span><span style="color:#666">.</span><span style="color:#b44">println</span><span style="color:#666">(</span>d<span style="color:#666">);</span></code></pre></div>
 <h3 id="output">Output</h3>
 
 <pre><code>5 // initialized value
@@ -161,28 +161,28 @@
 <li>Increment / decrement (many ways)</li>
 <li>Exponentiation: in the <em>Math</em> class</li>
 </ul>
-<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#fff;font-weight:bold">public</span> <span style="color:#fff;font-weight:bold">class</span> Operators{
+<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#a2f;font-weight:bold">public</span> <span style="color:#a2f;font-weight:bold">class</span> <span style="color:#00f">Operators</span><span style="color:#666">{</span>
 
-    <span style="color:#fff;font-weight:bold">public</span> <span style="color:#fff;font-weight:bold">static</span> <span style="color:#fff;font-weight:bold">void</span> main(String[] args) {
+    <span style="color:#a2f;font-weight:bold">public</span> <span style="color:#a2f;font-weight:bold">static</span> <span style="color:#0b0;font-weight:bold">void</span> <span style="color:#00a000">main</span><span style="color:#666">(</span>String<span style="color:#666">[]</span> args<span style="color:#666">)</span> <span style="color:#666">{</span>
 
-        <span style="color:#fff;font-weight:bold">int</span> x = 2;
+        <span style="color:#0b0;font-weight:bold">int</span> x <span style="color:#666">=</span> 2<span style="color:#666">;</span>
 
-        <span style="color:#007f7f">// increment 3 times
-</span><span style="color:#007f7f"></span>        x++;
-        x += 1;
-        x = x + 1;
-        System.<span style="color:#007f7f">out</span>.<span style="color:#007f7f">println</span>(x);
+        <span style="color:#080;font-style:italic">// increment 3 times
+</span><span style="color:#080;font-style:italic"></span>        x<span style="color:#666">++;</span>
+        x <span style="color:#666">+=</span> 1<span style="color:#666">;</span>
+        x <span style="color:#666">=</span> x <span style="color:#666">+</span> 1<span style="color:#666">;</span>
+        System<span style="color:#666">.</span><span style="color:#b44">out</span><span style="color:#666">.</span><span style="color:#b44">println</span><span style="color:#666">(</span>x<span style="color:#666">);</span>
 
-        <span style="color:#007f7f">// decrement 3 times
-</span><span style="color:#007f7f"></span>        x--;
-        x -= 1;
-        x = x - 1;
-        System.<span style="color:#007f7f">out</span>.<span style="color:#007f7f">println</span>(x);
+        <span style="color:#080;font-style:italic">// decrement 3 times
+</span><span style="color:#080;font-style:italic"></span>        x<span style="color:#666">--;</span>
+        x <span style="color:#666">-=</span> 1<span style="color:#666">;</span>
+        x <span style="color:#666">=</span> x <span style="color:#666">-</span> 1<span style="color:#666">;</span>
+        System<span style="color:#666">.</span><span style="color:#b44">out</span><span style="color:#666">.</span><span style="color:#b44">println</span><span style="color:#666">(</span>x<span style="color:#666">);</span>
 
-        <span style="color:#007f7f">//pow function part of System.Math
-</span><span style="color:#007f7f"></span>        System.<span style="color:#007f7f">out</span>.<span style="color:#007f7f">println</span>(Math.<span style="color:#007f7f">pow</span>(x,3));
-    }
-}</code></pre></div>
+        <span style="color:#080;font-style:italic">//pow function part of System.Math
+</span><span style="color:#080;font-style:italic"></span>        System<span style="color:#666">.</span><span style="color:#b44">out</span><span style="color:#666">.</span><span style="color:#b44">println</span><span style="color:#666">(</span>Math<span style="color:#666">.</span><span style="color:#b44">pow</span><span style="color:#666">(</span>x<span style="color:#666">,</span>3<span style="color:#666">));</span>
+    <span style="color:#666">}</span>
+<span style="color:#666">}</span></code></pre></div>
 <h2 id="char-string">char &amp; String</h2>
 
 <ul>
@@ -191,19 +191,19 @@
 <li>String in immutable (just like Python)</li>
 <li><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html">Java String API</a></li>
 </ul>
-<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#fff;font-weight:bold">public</span> <span style="color:#fff;font-weight:bold">class</span> Strings {
-    <span style="color:#fff;font-weight:bold">public</span> <span style="color:#fff;font-weight:bold">static</span> <span style="color:#fff;font-weight:bold">void</span> main(String[] args) {
-        <span style="color:#007f7f">// chars use single quotes
-</span><span style="color:#007f7f"></span>        <span style="color:#fff;font-weight:bold">char</span> c = <span style="color:#0ff;font-weight:bold">&#39;a&#39;</span>;
+<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#a2f;font-weight:bold">public</span> <span style="color:#a2f;font-weight:bold">class</span> <span style="color:#00f">Strings</span> <span style="color:#666">{</span>
+    <span style="color:#a2f;font-weight:bold">public</span> <span style="color:#a2f;font-weight:bold">static</span> <span style="color:#0b0;font-weight:bold">void</span> <span style="color:#00a000">main</span><span style="color:#666">(</span>String<span style="color:#666">[]</span> args<span style="color:#666">)</span> <span style="color:#666">{</span>
+        <span style="color:#080;font-style:italic">// chars use single quotes
+</span><span style="color:#080;font-style:italic"></span>        <span style="color:#0b0;font-weight:bold">char</span> c <span style="color:#666">=</span> <span style="color:#b44">&#39;a&#39;</span><span style="color:#666">;</span>
 
-        <span style="color:#007f7f">//strings use double quotes
-</span><span style="color:#007f7f"></span>        String s = <span style="color:#0ff;font-weight:bold">&#34;Hello&#34;</span>;
+        <span style="color:#080;font-style:italic">//strings use double quotes
+</span><span style="color:#080;font-style:italic"></span>        String s <span style="color:#666">=</span> <span style="color:#b44">&#34;Hello&#34;</span><span style="color:#666">;</span>
 
-        <span style="color:#007f7f">// accessing a char by string index
-</span><span style="color:#007f7f"></span>        <span style="color:#fff;font-weight:bold">char</span> c2 = s.<span style="color:#007f7f">charAt</span>(0);
-        System.<span style="color:#007f7f">out</span>.<span style="color:#007f7f">println</span>(c + <span style="color:#0ff;font-weight:bold">&#34; &#34;</span> + s + <span style="color:#0ff;font-weight:bold">&#34; &#34;</span> + c2);
-    }
-}</code></pre></div>
+        <span style="color:#080;font-style:italic">// accessing a char by string index
+</span><span style="color:#080;font-style:italic"></span>        <span style="color:#0b0;font-weight:bold">char</span> c2 <span style="color:#666">=</span> s<span style="color:#666">.</span><span style="color:#b44">charAt</span><span style="color:#666">(</span>0<span style="color:#666">);</span>
+        System<span style="color:#666">.</span><span style="color:#b44">out</span><span style="color:#666">.</span><span style="color:#b44">println</span><span style="color:#666">(</span>c <span style="color:#666">+</span> <span style="color:#b44">&#34; &#34;</span> <span style="color:#666">+</span> s <span style="color:#666">+</span> <span style="color:#b44">&#34; &#34;</span> <span style="color:#666">+</span> c2<span style="color:#666">);</span>
+    <span style="color:#666">}</span>
+<span style="color:#666">}</span></code></pre></div>
 <h3 id="output-1">Output</h3>
 
 <pre><code>a Hello H
@@ -274,39 +274,39 @@ the user presses the &lsquo;enter&rsquo; key</li>
 </ul>
 
 <h3 id="demo-1">Demo</h3>
-<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#fff;font-weight:bold">import</span> java.util.Scanner;
+<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#a2f;font-weight:bold">import</span> <span style="color:#00f;font-weight:bold">java.util.Scanner</span><span style="color:#666">;</span>
 
-<span style="color:#fff;font-weight:bold">public</span> <span style="color:#fff;font-weight:bold">class</span> InputOutput {
-    <span style="color:#fff;font-weight:bold">public</span> <span style="color:#fff;font-weight:bold">static</span> <span style="color:#fff;font-weight:bold">void</span> main(String[] args) {
+<span style="color:#a2f;font-weight:bold">public</span> <span style="color:#a2f;font-weight:bold">class</span> <span style="color:#00f">InputOutput</span> <span style="color:#666">{</span>
+    <span style="color:#a2f;font-weight:bold">public</span> <span style="color:#a2f;font-weight:bold">static</span> <span style="color:#0b0;font-weight:bold">void</span> <span style="color:#00a000">main</span><span style="color:#666">(</span>String<span style="color:#666">[]</span> args<span style="color:#666">)</span> <span style="color:#666">{</span>
 
-        <span style="color:#fff;font-weight:bold">int</span> i;
-        <span style="color:#fff;font-weight:bold">char</span> c;
-        String s;
-        String junk;
+        <span style="color:#0b0;font-weight:bold">int</span> i<span style="color:#666">;</span>
+        <span style="color:#0b0;font-weight:bold">char</span> c<span style="color:#666">;</span>
+        String s<span style="color:#666">;</span>
+        String junk<span style="color:#666">;</span>
 
-        Scanner in = <span style="color:#fff;font-weight:bold">new</span> Scanner(System.<span style="color:#007f7f">in</span>);
+        Scanner in <span style="color:#666">=</span> <span style="color:#a2f;font-weight:bold">new</span> Scanner<span style="color:#666">(</span>System<span style="color:#666">.</span><span style="color:#b44">in</span><span style="color:#666">);</span>
 
-        System.<span style="color:#007f7f">out</span>.<span style="color:#007f7f">print</span>( <span style="color:#0ff;font-weight:bold">&#34;Hello from stdout!\n&#34;</span> + <span style="color:#0ff;font-weight:bold">&#34;Give me an int: &#34;</span>);
+        System<span style="color:#666">.</span><span style="color:#b44">out</span><span style="color:#666">.</span><span style="color:#b44">print</span><span style="color:#666">(</span> <span style="color:#b44">&#34;Hello from stdout!\n&#34;</span> <span style="color:#666">+</span> <span style="color:#b44">&#34;Give me an int: &#34;</span><span style="color:#666">);</span>
 
-        <span style="color:#fff;font-weight:bold">try</span>{
-            i = in.<span style="color:#007f7f">nextInt</span>();
-            System.<span style="color:#007f7f">out</span>.<span style="color:#007f7f">println</span>(<span style="color:#0ff;font-weight:bold">&#34;Got &#34;</span> + i );
-        } <span style="color:#fff;font-weight:bold">catch</span>(Exception e) {
-            <span style="color:#007f7f">// if error, print message and ignore bad number by calling in.next() again
-</span><span style="color:#007f7f"></span>            System.<span style="color:#007f7f">err</span>.<span style="color:#007f7f">println</span>(<span style="color:#0ff;font-weight:bold">&#34;Could not convert input to integer!&#34;</span>);
-            in.<span style="color:#007f7f">next</span>();
-        }
+        <span style="color:#a2f;font-weight:bold">try</span><span style="color:#666">{</span>
+            i <span style="color:#666">=</span> in<span style="color:#666">.</span><span style="color:#b44">nextInt</span><span style="color:#666">();</span>
+            System<span style="color:#666">.</span><span style="color:#b44">out</span><span style="color:#666">.</span><span style="color:#b44">println</span><span style="color:#666">(</span><span style="color:#b44">&#34;Got &#34;</span> <span style="color:#666">+</span> i <span style="color:#666">);</span>
+        <span style="color:#666">}</span> <span style="color:#a2f;font-weight:bold">catch</span><span style="color:#666">(</span>Exception e<span style="color:#666">)</span> <span style="color:#666">{</span>
+            <span style="color:#080;font-style:italic">// if error, print message and ignore bad number by calling in.next() again
+</span><span style="color:#080;font-style:italic"></span>            System<span style="color:#666">.</span><span style="color:#b44">err</span><span style="color:#666">.</span><span style="color:#b44">println</span><span style="color:#666">(</span><span style="color:#b44">&#34;Could not convert input to integer!&#34;</span><span style="color:#666">);</span>
+            in<span style="color:#666">.</span><span style="color:#b44">next</span><span style="color:#666">();</span>
+        <span style="color:#666">}</span>
 
-        System.<span style="color:#007f7f">out</span>.<span style="color:#007f7f">print</span>(<span style="color:#0ff;font-weight:bold">&#34;Give me a char: &#34;</span>);
-        c = in.<span style="color:#007f7f">next</span>().<span style="color:#007f7f">charAt</span>(0);
-        System.<span style="color:#007f7f">out</span>.<span style="color:#007f7f">println</span>(<span style="color:#0ff;font-weight:bold">&#34;Got &#39;&#34;</span> + c + <span style="color:#0ff;font-weight:bold">&#34;&#39;&#34;</span>);
+        System<span style="color:#666">.</span><span style="color:#b44">out</span><span style="color:#666">.</span><span style="color:#b44">print</span><span style="color:#666">(</span><span style="color:#b44">&#34;Give me a char: &#34;</span><span style="color:#666">);</span>
+        c <span style="color:#666">=</span> in<span style="color:#666">.</span><span style="color:#b44">next</span><span style="color:#666">().</span><span style="color:#b44">charAt</span><span style="color:#666">(</span>0<span style="color:#666">);</span>
+        System<span style="color:#666">.</span><span style="color:#b44">out</span><span style="color:#666">.</span><span style="color:#b44">println</span><span style="color:#666">(</span><span style="color:#b44">&#34;Got &#39;&#34;</span> <span style="color:#666">+</span> c <span style="color:#666">+</span> <span style="color:#b44">&#34;&#39;&#34;</span><span style="color:#666">);</span>
 
-        System.<span style="color:#007f7f">out</span>.<span style="color:#007f7f">print</span>(<span style="color:#0ff;font-weight:bold">&#34;Give me a string: &#34;</span>);
-        s = in.<span style="color:#007f7f">next</span>();
-        System.<span style="color:#007f7f">out</span>.<span style="color:#007f7f">println</span>(<span style="color:#0ff;font-weight:bold">&#34;Got \&#34;&#34;</span> + s + <span style="color:#0ff;font-weight:bold">&#34;\&#34;&#34;</span>);
+        System<span style="color:#666">.</span><span style="color:#b44">out</span><span style="color:#666">.</span><span style="color:#b44">print</span><span style="color:#666">(</span><span style="color:#b44">&#34;Give me a string: &#34;</span><span style="color:#666">);</span>
+        s <span style="color:#666">=</span> in<span style="color:#666">.</span><span style="color:#b44">next</span><span style="color:#666">();</span>
+        System<span style="color:#666">.</span><span style="color:#b44">out</span><span style="color:#666">.</span><span style="color:#b44">println</span><span style="color:#666">(</span><span style="color:#b44">&#34;Got \&#34;&#34;</span> <span style="color:#666">+</span> s <span style="color:#666">+</span> <span style="color:#b44">&#34;\&#34;&#34;</span><span style="color:#666">);</span>
 
-    }
-}</code></pre></div>
+    <span style="color:#666">}</span>
+<span style="color:#666">}</span></code></pre></div>
 <h2 id="functions">Functions</h2>
 
 <p><strong>Review</strong></p>
@@ -332,21 +332,21 @@ function name, and list of parameters in parentheses <em>()</em>
 </ul>
 
 <h3 id="demo-2">Demo</h3>
-<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#fff;font-weight:bold">public</span> <span style="color:#fff;font-weight:bold">class</span> Function{
+<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#a2f;font-weight:bold">public</span> <span style="color:#a2f;font-weight:bold">class</span> <span style="color:#00f">Function</span><span style="color:#666">{</span>
 
-    <span style="color:#fff;font-weight:bold">public</span> <span style="color:#fff;font-weight:bold">static</span> <span style="color:#fff;font-weight:bold">int</span> addition(<span style="color:#fff;font-weight:bold">int</span> a , <span style="color:#fff;font-weight:bold">int</span> b) {
-        <span style="color:#fff;font-weight:bold">int</span> r;
-        r = a + b;
-        <span style="color:#fff;font-weight:bold">return</span> r;
-    }
+    <span style="color:#a2f;font-weight:bold">public</span> <span style="color:#a2f;font-weight:bold">static</span> <span style="color:#0b0;font-weight:bold">int</span> <span style="color:#00a000">addition</span><span style="color:#666">(</span><span style="color:#0b0;font-weight:bold">int</span> a <span style="color:#666">,</span> <span style="color:#0b0;font-weight:bold">int</span> b<span style="color:#666">)</span> <span style="color:#666">{</span>
+        <span style="color:#0b0;font-weight:bold">int</span> r<span style="color:#666">;</span>
+        r <span style="color:#666">=</span> a <span style="color:#666">+</span> b<span style="color:#666">;</span>
+        <span style="color:#a2f;font-weight:bold">return</span> r<span style="color:#666">;</span>
+    <span style="color:#666">}</span>
 
 
-    <span style="color:#fff;font-weight:bold">public</span> <span style="color:#fff;font-weight:bold">static</span> <span style="color:#fff;font-weight:bold">void</span> main(String[] args) {
-        <span style="color:#fff;font-weight:bold">int</span> z;
-        z = addition (5,3);
-        System.<span style="color:#007f7f">out</span>.<span style="color:#007f7f">println</span>(<span style="color:#0ff;font-weight:bold">&#34;The result is &#34;</span> + z);
-    }
-}</code></pre></div>
+    <span style="color:#a2f;font-weight:bold">public</span> <span style="color:#a2f;font-weight:bold">static</span> <span style="color:#0b0;font-weight:bold">void</span> <span style="color:#00a000">main</span><span style="color:#666">(</span>String<span style="color:#666">[]</span> args<span style="color:#666">)</span> <span style="color:#666">{</span>
+        <span style="color:#0b0;font-weight:bold">int</span> z<span style="color:#666">;</span>
+        z <span style="color:#666">=</span> addition <span style="color:#666">(</span>5<span style="color:#666">,</span>3<span style="color:#666">);</span>
+        System<span style="color:#666">.</span><span style="color:#b44">out</span><span style="color:#666">.</span><span style="color:#b44">println</span><span style="color:#666">(</span><span style="color:#b44">&#34;The result is &#34;</span> <span style="color:#666">+</span> z<span style="color:#666">);</span>
+    <span style="color:#666">}</span>
+<span style="color:#666">}</span></code></pre></div>
 </main>
 
   <footer>

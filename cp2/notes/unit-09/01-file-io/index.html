@@ -48,78 +48,78 @@
 
 <ul>
 <li><p>You can use an InputStreamReader to read from standard (console) input.</p>
-<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">InputStreamReader isr = <span style="color:#fff;font-weight:bold">new</span> InputStreamReader(System.<span style="color:#007f7f">in</span>);</code></pre></div></li>
+<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">InputStreamReader isr <span style="color:#666">=</span> <span style="color:#a2f;font-weight:bold">new</span> InputStreamReader<span style="color:#666">(</span>System<span style="color:#666">.</span><span style="color:#b44">in</span><span style="color:#666">);</span></code></pre></div></li>
 
 <li><p>You can use a FileReader to read from file input</p>
-<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">FileReader fr = <span style="color:#fff;font-weight:bold">new</span> FileReader(<span style="color:#0ff;font-weight:bold">&#34;input.txt&#34;</span>);</code></pre></div></li>
+<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">FileReader fr <span style="color:#666">=</span> <span style="color:#a2f;font-weight:bold">new</span> FileReader<span style="color:#666">(</span><span style="color:#b44">&#34;input.txt&#34;</span><span style="color:#666">);</span></code></pre></div></li>
 </ul>
 
 <h4 id="demo">Demo</h4>
-<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#fff;font-weight:bold">import</span> java.io.BufferedReader;
-<span style="color:#fff;font-weight:bold">import</span> java.io.FileReader;
-<span style="color:#fff;font-weight:bold">import</span> java.io.IOException;
-<span style="color:#fff;font-weight:bold">import</span> java.io.InputStreamReader;
+<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#a2f;font-weight:bold">import</span> <span style="color:#00f;font-weight:bold">java.io.BufferedReader</span><span style="color:#666">;</span>
+<span style="color:#a2f;font-weight:bold">import</span> <span style="color:#00f;font-weight:bold">java.io.FileReader</span><span style="color:#666">;</span>
+<span style="color:#a2f;font-weight:bold">import</span> <span style="color:#00f;font-weight:bold">java.io.IOException</span><span style="color:#666">;</span>
+<span style="color:#a2f;font-weight:bold">import</span> <span style="color:#00f;font-weight:bold">java.io.InputStreamReader</span><span style="color:#666">;</span>
 
-<span style="color:#fff;font-weight:bold">public</span> <span style="color:#fff;font-weight:bold">class</span> FileReadDemo {
+<span style="color:#a2f;font-weight:bold">public</span> <span style="color:#a2f;font-weight:bold">class</span> <span style="color:#00f">FileReadDemo</span> <span style="color:#666">{</span>
 
-	<span style="color:#fff;font-weight:bold">public</span> <span style="color:#fff;font-weight:bold">static</span> <span style="color:#fff;font-weight:bold">void</span> main(String[] args){
+	<span style="color:#a2f;font-weight:bold">public</span> <span style="color:#a2f;font-weight:bold">static</span> <span style="color:#0b0;font-weight:bold">void</span> <span style="color:#00a000">main</span><span style="color:#666">(</span>String<span style="color:#666">[]</span> args<span style="color:#666">){</span>
 
-		<span style="color:#fff;font-weight:bold">try</span> {
-			BufferedReader fileIn;
-			String line;
+		<span style="color:#a2f;font-weight:bold">try</span> <span style="color:#666">{</span>
+			BufferedReader fileIn<span style="color:#666">;</span>
+			String line<span style="color:#666">;</span>
 
-			<span style="color:#007f7f">// reading from standard input
-</span><span style="color:#007f7f"></span>			fileIn = <span style="color:#fff;font-weight:bold">new</span> BufferedReader(<span style="color:#fff;font-weight:bold">new</span> InputStreamReader(System.<span style="color:#007f7f">in</span>));
+			<span style="color:#080;font-style:italic">// reading from standard input
+</span><span style="color:#080;font-style:italic"></span>			fileIn <span style="color:#666">=</span> <span style="color:#a2f;font-weight:bold">new</span> BufferedReader<span style="color:#666">(</span><span style="color:#a2f;font-weight:bold">new</span> InputStreamReader<span style="color:#666">(</span>System<span style="color:#666">.</span><span style="color:#b44">in</span><span style="color:#666">));</span>
 
-			<span style="color:#007f7f">// reading from a file
-</span><span style="color:#007f7f"></span>			<span style="color:#007f7f">//fileIn = new BufferedReader(new FileReader(&#34;filename.txt&#34;));
-</span><span style="color:#007f7f"></span>
-			<span style="color:#fff;font-weight:bold">while</span>((line = fileIn.<span style="color:#007f7f">readLine</span>()) != <span style="color:#fff;font-weight:bold">null</span>){
+			<span style="color:#080;font-style:italic">// reading from a file
+</span><span style="color:#080;font-style:italic"></span>			<span style="color:#080;font-style:italic">//fileIn = new BufferedReader(new FileReader(&#34;filename.txt&#34;));
+</span><span style="color:#080;font-style:italic"></span>
+			<span style="color:#a2f;font-weight:bold">while</span><span style="color:#666">((</span>line <span style="color:#666">=</span> fileIn<span style="color:#666">.</span><span style="color:#b44">readLine</span><span style="color:#666">())</span> <span style="color:#666">!=</span> <span style="color:#a2f;font-weight:bold">null</span><span style="color:#666">){</span>
 
-				<span style="color:#007f7f">// remove any leading or trailing whitespace
-</span><span style="color:#007f7f"></span>				<span style="color:#007f7f">//	also removes newline (\n) or carriage return (\r)
-</span><span style="color:#007f7f"></span>				line = line.<span style="color:#007f7f">trim</span>();
-				System.<span style="color:#007f7f">out</span>.<span style="color:#007f7f">println</span>( line );
-			}
-			fileIn.<span style="color:#007f7f">close</span>();
+				<span style="color:#080;font-style:italic">// remove any leading or trailing whitespace
+</span><span style="color:#080;font-style:italic"></span>				<span style="color:#080;font-style:italic">//	also removes newline (\n) or carriage return (\r)
+</span><span style="color:#080;font-style:italic"></span>				line <span style="color:#666">=</span> line<span style="color:#666">.</span><span style="color:#b44">trim</span><span style="color:#666">();</span>
+				System<span style="color:#666">.</span><span style="color:#b44">out</span><span style="color:#666">.</span><span style="color:#b44">println</span><span style="color:#666">(</span> line <span style="color:#666">);</span>
+			<span style="color:#666">}</span>
+			fileIn<span style="color:#666">.</span><span style="color:#b44">close</span><span style="color:#666">();</span>
 
-		} <span style="color:#fff;font-weight:bold">catch</span> (IOException e) {
-			e.<span style="color:#007f7f">printStackTrace</span>();
-		}
-	}
-}</code></pre></div>
+		<span style="color:#666">}</span> <span style="color:#a2f;font-weight:bold">catch</span> <span style="color:#666">(</span>IOException e<span style="color:#666">)</span> <span style="color:#666">{</span>
+			e<span style="color:#666">.</span><span style="color:#b44">printStackTrace</span><span style="color:#666">();</span>
+		<span style="color:#666">}</span>
+	<span style="color:#666">}</span>
+<span style="color:#666">}</span></code></pre></div>
 <h2 id="file-output">File Output</h2>
 
 <h4 id="demo-1">Demo</h4>
-<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#fff;font-weight:bold">import</span> java.io.BufferedWriter;
-<span style="color:#fff;font-weight:bold">import</span> java.io.FileOutputStream;
-<span style="color:#fff;font-weight:bold">import</span> java.io.IOException;
-<span style="color:#fff;font-weight:bold">import</span> java.io.OutputStreamWriter;
-<span style="color:#fff;font-weight:bold">import</span> java.io.Writer;
+<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#a2f;font-weight:bold">import</span> <span style="color:#00f;font-weight:bold">java.io.BufferedWriter</span><span style="color:#666">;</span>
+<span style="color:#a2f;font-weight:bold">import</span> <span style="color:#00f;font-weight:bold">java.io.FileOutputStream</span><span style="color:#666">;</span>
+<span style="color:#a2f;font-weight:bold">import</span> <span style="color:#00f;font-weight:bold">java.io.IOException</span><span style="color:#666">;</span>
+<span style="color:#a2f;font-weight:bold">import</span> <span style="color:#00f;font-weight:bold">java.io.OutputStreamWriter</span><span style="color:#666">;</span>
+<span style="color:#a2f;font-weight:bold">import</span> <span style="color:#00f;font-weight:bold">java.io.Writer</span><span style="color:#666">;</span>
 
-<span style="color:#fff;font-weight:bold">public</span> <span style="color:#fff;font-weight:bold">class</span> FileWriteDemo {
+<span style="color:#a2f;font-weight:bold">public</span> <span style="color:#a2f;font-weight:bold">class</span> <span style="color:#00f">FileWriteDemo</span> <span style="color:#666">{</span>
 
-	<span style="color:#fff;font-weight:bold">public</span> <span style="color:#fff;font-weight:bold">static</span> <span style="color:#fff;font-weight:bold">void</span> main(String[] args) {
+	<span style="color:#a2f;font-weight:bold">public</span> <span style="color:#a2f;font-weight:bold">static</span> <span style="color:#0b0;font-weight:bold">void</span> <span style="color:#00a000">main</span><span style="color:#666">(</span>String<span style="color:#666">[]</span> args<span style="color:#666">)</span> <span style="color:#666">{</span>
 
-		<span style="color:#fff;font-weight:bold">try</span>{
-			Writer writer;
+		<span style="color:#a2f;font-weight:bold">try</span><span style="color:#666">{</span>
+			Writer writer<span style="color:#666">;</span>
 
-			writer = <span style="color:#fff;font-weight:bold">new</span> BufferedWriter(<span style="color:#fff;font-weight:bold">new</span> OutputStreamWriter(
-			          <span style="color:#fff;font-weight:bold">new</span> FileOutputStream(<span style="color:#0ff;font-weight:bold">&#34;filename.txt&#34;</span>), <span style="color:#0ff;font-weight:bold">&#34;utf-8&#34;</span>));
+			writer <span style="color:#666">=</span> <span style="color:#a2f;font-weight:bold">new</span> BufferedWriter<span style="color:#666">(</span><span style="color:#a2f;font-weight:bold">new</span> OutputStreamWriter<span style="color:#666">(</span>
+			          <span style="color:#a2f;font-weight:bold">new</span> FileOutputStream<span style="color:#666">(</span><span style="color:#b44">&#34;filename.txt&#34;</span><span style="color:#666">),</span> <span style="color:#b44">&#34;utf-8&#34;</span><span style="color:#666">));</span>
 
-			<span style="color:#fff;font-weight:bold">for</span>( <span style="color:#fff;font-weight:bold">int</span> i=0; i&lt;10; i++ ){
+			<span style="color:#a2f;font-weight:bold">for</span><span style="color:#666">(</span> <span style="color:#0b0;font-weight:bold">int</span> i<span style="color:#666">=</span>0<span style="color:#666">;</span> i<span style="color:#666">&lt;</span>10<span style="color:#666">;</span> i<span style="color:#666">++</span> <span style="color:#666">){</span>
 
-				<span style="color:#007f7f">// add a carriage return (\r) at the end of each line
-</span><span style="color:#007f7f"></span>				writer.<span style="color:#007f7f">write</span>( <span style="color:#0ff;font-weight:bold">&#34;Hi &#34;</span> + i + <span style="color:#0ff;font-weight:bold">&#34;!\r&#34;</span>);
-			}
+				<span style="color:#080;font-style:italic">// add a carriage return (\r) at the end of each line
+</span><span style="color:#080;font-style:italic"></span>				writer<span style="color:#666">.</span><span style="color:#b44">write</span><span style="color:#666">(</span> <span style="color:#b44">&#34;Hi &#34;</span> <span style="color:#666">+</span> i <span style="color:#666">+</span> <span style="color:#b44">&#34;!\r&#34;</span><span style="color:#666">);</span>
+			<span style="color:#666">}</span>
 
-			writer.<span style="color:#007f7f">close</span>();
-		}
-		<span style="color:#fff;font-weight:bold">catch</span>(IOException e){
-			e.<span style="color:#007f7f">printStackTrace</span>();
-		}
-	}
-}</code></pre></div>
+			writer<span style="color:#666">.</span><span style="color:#b44">close</span><span style="color:#666">();</span>
+		<span style="color:#666">}</span>
+		<span style="color:#a2f;font-weight:bold">catch</span><span style="color:#666">(</span>IOException e<span style="color:#666">){</span>
+			e<span style="color:#666">.</span><span style="color:#b44">printStackTrace</span><span style="color:#666">();</span>
+		<span style="color:#666">}</span>
+	<span style="color:#666">}</span>
+<span style="color:#666">}</span></code></pre></div>
 </main>
 
   <footer>

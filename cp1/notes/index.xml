@@ -339,9 +339,9 @@ import matplotlib.pyplot as plt Pie Chart  A pie chart is a circular graph which
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/cp1/notes/unit-02/04-strings/</guid>
-      <description>As we have previously learned, a string is a sequence of characters. String can be short or long (as seen below)
+      <description> As we have previously learned, a string is a sequence of characters. String can be short or long (as seen below)
 &amp;#34;hi&amp;#34; &amp;#34;Hello World&amp;#34; &amp;#34;This is a very long string!&amp;#34; Just like numbers, there are operations that can be performed on strings.
- concatenation a + b  joins the strings a and b into one string  repetition a * x  repeats the string a, x times   Examples ```python &amp;lsquo;Hello&amp;rsquo; + &amp;ldquo;World&amp;rdquo;</description>
+ concatenation a + b  joins the strings a and b into one string  repetition a * x  repeats the string a, x times   Examples &amp;#39;Hello&amp;#39; + &amp;#34;World&amp;#34; # expression with value &amp;#34;HelloWorld&amp;#34; &amp;#39;hi&amp;#39; * 5 # expression with value &amp;#39;hihihihihi&amp;#39;</description>
     </item>
     
     <item>

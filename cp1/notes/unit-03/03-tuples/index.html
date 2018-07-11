@@ -58,11 +58,11 @@
 <li>Access and individual element from a tuple using the <strong>index operator []</strong></li>
 </ul></li>
 </ul>
-<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#007f7f"># tuple basics</span>
-p1 = (<span style="color:#ff0;font-weight:bold">1</span>, <span style="color:#ff0;font-weight:bold">3</span>)             <span style="color:#007f7f"># packing</span>
-x1, y1 = p1             <span style="color:#007f7f"># unpacking</span>
-<span style="color:#fff;font-weight:bold">print</span>(x1, y1)           <span style="color:#007f7f"># prints &#39;1 3&#39;</span>
-<span style="color:#fff;font-weight:bold">print</span>(p1[<span style="color:#ff0;font-weight:bold">0</span>], p1[<span style="color:#ff0;font-weight:bold">1</span>])     <span style="color:#007f7f"># indexing - prints &#39;1 3</span></code></pre></div>
+<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#080;font-style:italic"># tuple basics</span>
+p1 <span style="color:#666">=</span> (<span style="color:#666">1</span>, <span style="color:#666">3</span>)             <span style="color:#080;font-style:italic"># packing</span>
+x1, y1 <span style="color:#666">=</span> p1             <span style="color:#080;font-style:italic"># unpacking</span>
+<span style="color:#a2f;font-weight:bold">print</span>(x1, y1)           <span style="color:#080;font-style:italic"># prints &#39;1 3&#39;</span>
+<span style="color:#a2f;font-weight:bold">print</span>(p1[<span style="color:#666">0</span>], p1[<span style="color:#666">1</span>])     <span style="color:#080;font-style:italic"># indexing - prints &#39;1 3</span></code></pre></div>
 <p><img src="/images/cp1/unit-03/tuple.png" alt="" /></p>
 
 <h2 id="tuples-in-functions">Tuples in Functions</h2>
@@ -70,17 +70,17 @@ x1, y1 = p1             <span style="color:#007f7f"># unpacking</span>
 <ul>
 <li>Tuples can allow you to return multiple data values from a function</li>
 </ul>
-<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#007f7f"># tuples and functions</span>
-<span style="color:#fff;font-weight:bold">def</span> scale(pt, factor):
-    x, y = pt
-    x *= factor      <span style="color:#007f7f"># same as x = x * factor</span>
-    y *= factor
-    <span style="color:#fff;font-weight:bold">return</span> (x, y)
+<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#080;font-style:italic"># tuples and functions</span>
+<span style="color:#a2f;font-weight:bold">def</span> <span style="color:#00a000">scale</span>(pt, factor):
+    x, y <span style="color:#666">=</span> pt
+    x <span style="color:#666">*=</span> factor      <span style="color:#080;font-style:italic"># same as x = x * factor</span>
+    y <span style="color:#666">*=</span> factor
+    <span style="color:#a2f;font-weight:bold">return</span> (x, y)
 
-<span style="color:#fff;font-weight:bold">def</span> main():
-    p1 = (<span style="color:#ff0;font-weight:bold">1</span>, <span style="color:#ff0;font-weight:bold">3</span>)
-    p2 = scale(p1, <span style="color:#ff0;font-weight:bold">2</span>)
-    <span style="color:#fff;font-weight:bold">print</span>(p2)       <span style="color:#007f7f"># (2, 6)</span>
+<span style="color:#a2f;font-weight:bold">def</span> <span style="color:#00a000">main</span>():
+    p1 <span style="color:#666">=</span> (<span style="color:#666">1</span>, <span style="color:#666">3</span>)
+    p2 <span style="color:#666">=</span> scale(p1, <span style="color:#666">2</span>)
+    <span style="color:#a2f;font-weight:bold">print</span>(p2)       <span style="color:#080;font-style:italic"># (2, 6)</span>
 
 
 main()</code></pre></div>
