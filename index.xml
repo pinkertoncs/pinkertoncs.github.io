@@ -647,7 +647,7 @@ Important The input function returns all data as strings, so for example if you 
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/cp1/notes/unit-02/p1-calculators/</guid>
-      <description>Overview  Use Python to solve a variety of generalized mathematical problems. Your solutions should work for any valid input.  Problems 1. Elapsed Time In the provided template file time.py, write a python program that will ask for the starting time in 24 four format and duration and output (print) the end time.
+      <description>Overview  Use Python to solve a variety of generalized mathematical problems. Your solutions should work for any valid input.  Problems 1. Elapsed Time Design and write a python program that will ask for the starting time in 24 four format and duration and output (print) the end time.
  Input
  Starting time (24 hour format) time duration in hours  Output
  The end time   2.</description>
