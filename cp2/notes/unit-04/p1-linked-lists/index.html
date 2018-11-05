@@ -66,29 +66,28 @@
 </ul></li>
 <li>Note: first compare by last name, then first name, finally by id (ids are guaranteed to be unique)</li>
 </ul></li>
-<li>Testing
+
+<li><p>Testing</p>
 
 <ul>
 <li>(For the full tests see Main.java and test/PersonTest.java)</li>
 <li>When you create new instances of a Person, you will invoke the constructors</li>
-<li>Other methods are invoked using the dot operator (<strong>.</strong>)
-```java
-// invokes the default constructor, Person()
-Person p1 = new Person();</li>
-</ul></li>
+<li>Other methods are invoked using the dot operator (<strong>.</strong>)</li>
 </ul>
+<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#080;font-style:italic">// invokes the default constructor, Person()
+</span><span style="color:#080;font-style:italic"></span>Person p1 <span style="color:#666">=</span> <span style="color:#a2f;font-weight:bold">new</span> Person<span style="color:#666">();</span>
 
-<p>//invokes the 2-arg constructor, Person(String, String)
-Person p2 = new Person(&ldquo;John&rdquo;, &ldquo;Doe&rdquo;);</p>
+<span style="color:#080;font-style:italic">//invokes the 2-arg constructor, Person(String, String)
+</span><span style="color:#080;font-style:italic"></span>Person p2 <span style="color:#666">=</span> <span style="color:#a2f;font-weight:bold">new</span> Person<span style="color:#666">(</span><span style="color:#b44">&#34;John&#34;</span><span style="color:#666">,</span> <span style="color:#b44">&#34;Doe&#34;</span><span style="color:#666">);</span>
 
-<p>p1.setName(&ldquo;Jane&rdquo;, &ldquo;Doe&rdquo;);</p>
+p1<span style="color:#666">.</span><span style="color:#b44">setName</span><span style="color:#666">(</span><span style="color:#b44">&#34;Jane&#34;</span><span style="color:#666">,</span> <span style="color:#b44">&#34;Doe&#34;</span><span style="color:#666">);</span>
 
-<p>// use the toString method for output
-System.out.println(p1.toString());</p>
+<span style="color:#080;font-style:italic">// use the toString method for output
+</span><span style="color:#080;font-style:italic"></span>System<span style="color:#666">.</span><span style="color:#b44">out</span><span style="color:#666">.</span><span style="color:#b44">println</span><span style="color:#666">(</span>p1<span style="color:#666">.</span><span style="color:#b44">toString</span><span style="color:#666">());</span>
 
-<p>//use the compareTo method, compare p1 and p2
-System.out.println(p1.compareTo(p2));
-```</p>
+<span style="color:#080;font-style:italic">//use the compareTo method, compare p1 and p2
+</span><span style="color:#080;font-style:italic"></span>System<span style="color:#666">.</span><span style="color:#b44">out</span><span style="color:#666">.</span><span style="color:#b44">println</span><span style="color:#666">(</span>p1<span style="color:#666">.</span><span style="color:#b44">compareTo</span><span style="color:#666">(</span>p2<span style="color:#666">));</span></code></pre></div></li>
+</ul>
 
 <h2 id="list">List</h2>
 
