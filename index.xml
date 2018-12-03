@@ -804,6 +804,15 @@ Project Overview  Research  Play around with Zork Online a bit. Do not get too s
     </item>
     
     <item>
+      <title>Project 01 - Song Lyric Analysis</title>
+      <link>/cp1/notes/unit-05/p1-song-lyric-analysis/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/cp1/notes/unit-05/p1-song-lyric-analysis/</guid>
+      <description>Directions  Use the provided template code as the starting point for your project. Add your code to the functions where you see pass  Outcome  You will be using Python and matplotlib to graph the frequency of words in popular songs. Use a search engine to find lyrics, and copying them into text files in your repl.it project. You should choose songs that are appropriate for school. If there are questionable lyrics (curse words, etc), us the radio edits as necessary.</description>
+    </item>
+    
+    <item>
       <title>Project 01 - Word Games</title>
       <link>/cp1/notes/unit-09/p1-word-games/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
