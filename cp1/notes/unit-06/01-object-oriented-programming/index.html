@@ -66,8 +66,8 @@ joe <span style="color:#666">=</span> Turtle()
 moe <span style="color:#666">=</span> Turtle()
 
 <span style="color:#080;font-style:italic"># pencolor METHOD sets the color ATTRIBUTE</span>
-joe<span style="color:#666">.</span>pencolor( <span style="color:#b44">&#39;blue&#39;</span> )
-moe<span style="color:#666">.</span>pencolor(<span style="color:#b44">&#39;green&#39;</span>)
+joe<span style="color:#666">.</span>pencolor( <span style="color:#b44"></span><span style="color:#b44">&#39;blue&#39;</span> )
+moe<span style="color:#666">.</span>pencolor(<span style="color:#b44"></span><span style="color:#b44">&#39;green&#39;</span>)
 
 <span style="color:#080;font-style:italic"># these METHODS change the position ATTRIBUTE of joe</span>
 joe<span style="color:#666">.</span>goto(<span style="color:#666">0</span>,<span style="color:#666">0</span>)
@@ -78,7 +78,7 @@ joe<span style="color:#666">.</span>forward(<span style="color:#666">100</span>)
 
 <span style="color:#a2f;font-weight:bold">def</span> <span style="color:#00a000">main</span>():
     joe <span style="color:#666">=</span> Person()          <span style="color:#080;font-style:italic"># define a Person object</span>
-    joe<span style="color:#666">.</span>name <span style="color:#666">=</span> <span style="color:#b44">&#34;Joe&#34;</span>        <span style="color:#080;font-style:italic"># give joe a name attribute</span>
+    joe<span style="color:#666">.</span>name <span style="color:#666">=</span> <span style="color:#b44"></span><span style="color:#b44">&#34;Joe&#34;</span>        <span style="color:#080;font-style:italic"># give joe a name attribute</span>
     <span style="color:#a2f;font-weight:bold">print</span>( joe<span style="color:#666">.</span>name )       <span style="color:#080;font-style:italic"># access joe&#39;s name</span></code></pre></div>
 <h2 id="special-methods">Special methods</h2>
 
@@ -103,7 +103,7 @@ joe<span style="color:#666">.</span>forward(<span style="color:#666">100</span>)
 </ul>
 <div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#a2f;font-weight:bold">class</span> <span style="color:#00f">Person</span>:
     <span style="color:#080;font-style:italic"># constructor</span>
-    <span style="color:#a2f;font-weight:bold">def</span> __init__(self, n<span style="color:#666">=</span><span style="color:#b44">&#34;Anonymous&#34;</span> ):
+    <span style="color:#a2f;font-weight:bold">def</span> __init__(self, n<span style="color:#666">=</span><span style="color:#b44"></span><span style="color:#b44">&#34;Anonymous&#34;</span> ):
         self<span style="color:#666">.</span>name <span style="color:#666">=</span> n
 
     <span style="color:#080;font-style:italic"># string casting method</span>
@@ -113,7 +113,7 @@ joe<span style="color:#666">.</span>forward(<span style="color:#666">100</span>)
 <span style="color:#a2f;font-weight:bold">def</span> <span style="color:#00a000">main</span>():
     <span style="color:#080;font-style:italic"># create some Person objects</span>
     p1 <span style="color:#666">=</span> Person()
-    p2 <span style="color:#666">=</span> Person(<span style="color:#b44">&#34;Joe&#34;</span>)
+    p2 <span style="color:#666">=</span> Person(<span style="color:#b44"></span><span style="color:#b44">&#34;Joe&#34;</span>)
 
     <span style="color:#080;font-style:italic"># print some Person objects</span>
     <span style="color:#a2f;font-weight:bold">print</span>( p1 )
@@ -131,7 +131,7 @@ Joe
 </ul>
 <div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#a2f;font-weight:bold">class</span> <span style="color:#00f">Person</span>:
     <span style="color:#080;font-style:italic"># constructor</span>
-    <span style="color:#a2f;font-weight:bold">def</span> __init__(self, n<span style="color:#666">=</span><span style="color:#b44">&#34;Anonymous&#34;</span> ):
+    <span style="color:#a2f;font-weight:bold">def</span> __init__(self, n<span style="color:#666">=</span><span style="color:#b44"></span><span style="color:#b44">&#34;Anonymous&#34;</span> ):
         self<span style="color:#666">.</span>name <span style="color:#666">=</span> n
 
     <span style="color:#080;font-style:italic"># string casting method</span>
@@ -139,10 +139,10 @@ Joe
         <span style="color:#a2f;font-weight:bold">return</span> self<span style="color:#666">.</span>name
 
     <span style="color:#a2f;font-weight:bold">def</span> <span style="color:#00a000">sayHi</span>( self ):
-        <span style="color:#a2f;font-weight:bold">print</span>( <span style="color:#b44">&#34;Hi, my name is&#34;</span>, self<span style="color:#666">.</span>name )
+        <span style="color:#a2f;font-weight:bold">print</span>( <span style="color:#b44"></span><span style="color:#b44">&#34;Hi, my name is&#34;</span>, self<span style="color:#666">.</span>name )
 
 <span style="color:#a2f;font-weight:bold">def</span> <span style="color:#00a000">main</span>():
-    joe <span style="color:#666">=</span> Person(<span style="color:#b44">&#34;Joe&#34;</span>)     <span style="color:#080;font-style:italic"># define a Person object</span>
+    joe <span style="color:#666">=</span> Person(<span style="color:#b44"></span><span style="color:#b44">&#34;Joe&#34;</span>)     <span style="color:#080;font-style:italic"># define a Person object</span>
     joe<span style="color:#666">.</span>sayHi()             <span style="color:#080;font-style:italic"># call say_hello method</span>
 
 main()</code></pre></div>
@@ -163,7 +163,7 @@ main()</code></pre></div>
 </ul>
 <div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#a2f;font-weight:bold">class</span> <span style="color:#00f">Person</span>:
     <span style="color:#080;font-style:italic"># constructor</span>
-    <span style="color:#a2f;font-weight:bold">def</span> __init__(self, n<span style="color:#666">=</span><span style="color:#b44">&#34;Anonymous&#34;</span> ):
+    <span style="color:#a2f;font-weight:bold">def</span> __init__(self, n<span style="color:#666">=</span><span style="color:#b44"></span><span style="color:#b44">&#34;Anonymous&#34;</span> ):
         self<span style="color:#666">.</span>name <span style="color:#666">=</span> n
         self<span style="color:#666">.</span>hobbies <span style="color:#666">=</span> []
 
@@ -172,12 +172,12 @@ main()</code></pre></div>
         <span style="color:#a2f;font-weight:bold">return</span> self<span style="color:#666">.</span>name
 
     <span style="color:#a2f;font-weight:bold">def</span> <span style="color:#00a000">say_hello</span>( self ):
-        <span style="color:#a2f;font-weight:bold">print</span>( <span style="color:#b44">&#34;Hi, my name is&#34;</span>, self<span style="color:#666">.</span>name )
+        <span style="color:#a2f;font-weight:bold">print</span>( <span style="color:#b44"></span><span style="color:#b44">&#34;Hi, my name is&#34;</span>, self<span style="color:#666">.</span>name )
 
         <span style="color:#a2f;font-weight:bold">if</span> self<span style="color:#666">.</span>hobbies:
-            <span style="color:#a2f;font-weight:bold">print</span>( <span style="color:#b44">&#34;I like&#34;</span>, end<span style="color:#666">=</span><span style="color:#b44">&#39; &#39;</span> )
+            <span style="color:#a2f;font-weight:bold">print</span>( <span style="color:#b44"></span><span style="color:#b44">&#34;I like&#34;</span>, end<span style="color:#666">=</span><span style="color:#b44"></span><span style="color:#b44">&#39; &#39;</span> )
             <span style="color:#a2f;font-weight:bold">for</span> hobby <span style="color:#a2f;font-weight:bold">in</span> self<span style="color:#666">.</span>hobbies:
-                <span style="color:#a2f;font-weight:bold">print</span>( hobby, end<span style="color:#666">=</span><span style="color:#b44">&#39;, &#39;</span>)
+                <span style="color:#a2f;font-weight:bold">print</span>( hobby, end<span style="color:#666">=</span><span style="color:#b44"></span><span style="color:#b44">&#39;, &#39;</span>)
             <span style="color:#a2f;font-weight:bold">print</span>()
 
     <span style="color:#a2f;font-weight:bold">def</span> <span style="color:#00a000">add_hobby</span>( self, h ):
@@ -185,13 +185,13 @@ main()</code></pre></div>
 
 
 <span style="color:#a2f;font-weight:bold">def</span> <span style="color:#00a000">main</span>():
-    joe <span style="color:#666">=</span> Person(<span style="color:#b44">&#34;Joe&#34;</span>)
-    joe<span style="color:#666">.</span>add_hobby(<span style="color:#b44">&#34;skiing&#34;</span>)
-    joe<span style="color:#666">.</span>add_hobby(<span style="color:#b44">&#34;trains&#34;</span>)
-    joe<span style="color:#666">.</span>add_hobby(<span style="color:#b44">&#34;turtles&#34;</span>)
+    joe <span style="color:#666">=</span> Person(<span style="color:#b44"></span><span style="color:#b44">&#34;Joe&#34;</span>)
+    joe<span style="color:#666">.</span>add_hobby(<span style="color:#b44"></span><span style="color:#b44">&#34;skiing&#34;</span>)
+    joe<span style="color:#666">.</span>add_hobby(<span style="color:#b44"></span><span style="color:#b44">&#34;trains&#34;</span>)
+    joe<span style="color:#666">.</span>add_hobby(<span style="color:#b44"></span><span style="color:#b44">&#34;turtles&#34;</span>)
     joe<span style="color:#666">.</span>say_hello()
-    <span style="color:#a2f;font-weight:bold">print</span>(<span style="color:#b44">&#39;---&#39;</span>)
-    sam <span style="color:#666">=</span> Person(<span style="color:#b44">&#39;Sam&#39;</span>)
+    <span style="color:#a2f;font-weight:bold">print</span>(<span style="color:#b44"></span><span style="color:#b44">&#39;---&#39;</span>)
+    sam <span style="color:#666">=</span> Person(<span style="color:#b44"></span><span style="color:#b44">&#39;Sam&#39;</span>)
     sam<span style="color:#666">.</span>say_hello()
 
 main()</code></pre></div>

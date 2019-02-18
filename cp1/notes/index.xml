@@ -456,7 +456,7 @@ Important The input function returns all data as strings, so for example if you 
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/cp1/notes/unit-08/p1-nettech/</guid>
-      <description>Directions  Do not use inline CSS!  Keep your styles separate from your structure (use internal or external CSS)  You will create one or two files for this assignment  NetTech.html NetTech.css (optional - you could use internal CSS)   Page Structure  Use the information that you have learned in unit 07 to create a webpage about Computer Networks and the Web  Review your unit 07 notes and first assignment  Topics  Computer Networks The Internet The WWW Web2.</description>
+      <description>Directions  Do not use inline CSS!  Keep your styles separate from your structure (use internal or external CSS)   Page Structure  Use the information that you have learned in unit 07 to create a webpage about Computer Networks and the Web  Review your unit 07 notes and first assignment  Topics  Computer Networks The Internet The WWW Web2.0 The Mobile Web  Tips/Hints  Put each section in a div and give each div or section header an id.</description>
     </item>
     
     <item>

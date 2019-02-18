@@ -62,7 +62,7 @@
 <h2 id="example">Example</h2>
 <div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#080;font-style:italic"># define the procedure, but don&#39;t execute the body yet…</span>
 <span style="color:#a2f;font-weight:bold">def</span> <span style="color:#00a000">foo</span>():
-    msg <span style="color:#666">=</span> <span style="color:#b44">&#34;Hello, world!&#34;</span>
+    msg <span style="color:#666">=</span> <span style="color:#b44"></span><span style="color:#b44">&#34;Hello, world!&#34;</span>
     <span style="color:#080;font-style:italic">#return</span>
     <span style="color:#080;font-style:italic">#uncomment the return statement to exit early</span>
     <span style="color:#a2f;font-weight:bold">print</span>( msg )
@@ -84,11 +84,11 @@ foo()</code></pre></div>
 <div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#a2f;font-weight:bold">def</span> <span style="color:#00a000">getANumber</span>():
 
     <span style="color:#a2f;font-weight:bold">try</span>:
-        x <span style="color:#666">=</span> <span style="color:#a2f">int</span>(<span style="color:#a2f">input</span>(<span style="color:#b44">&#34;Enter a number: &#34;</span>))
+        x <span style="color:#666">=</span> <span style="color:#a2f">int</span>(<span style="color:#a2f">input</span>(<span style="color:#b44"></span><span style="color:#b44">&#34;Enter a number: &#34;</span>))
         <span style="color:#080;font-style:italic"># try to read an int</span>
-        <span style="color:#a2f;font-weight:bold">print</span>(<span style="color:#b44">&#34;you entered:&#34;</span>, x)
+        <span style="color:#a2f;font-weight:bold">print</span>(<span style="color:#b44"></span><span style="color:#b44">&#34;you entered:&#34;</span>, x)
     <span style="color:#a2f;font-weight:bold">except</span>:
-        <span style="color:#a2f;font-weight:bold">print</span>(<span style="color:#b44">&#34;I said enter a number!&#34;</span>)
+        <span style="color:#a2f;font-weight:bold">print</span>(<span style="color:#b44"></span><span style="color:#b44">&#34;I said enter a number!&#34;</span>)
         <span style="color:#a2f;font-weight:bold">return</span>
          <span style="color:#080;font-style:italic"># use return to exit the function early</span>
 
@@ -101,17 +101,17 @@ getANumber()</code></pre></div>
 <li>A well organized program is easier to write, read, and maintain!</li>
 <li>The template below is a good starting point</li>
 </ul>
-<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#b44">&#34;&#34;&#34;
+<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#b44"></span><span style="color:#b44">&#34;&#34;&#34;
 </span><span style="color:#b44">Name:
 </span><span style="color:#b44">Assignment
 </span><span style="color:#b44">&#34;&#34;&#34;</span>
 
 <span style="color:#a2f;font-weight:bold">def</span> <span style="color:#00a000">proc1</span>():
-    <span style="color:#a2f;font-weight:bold">print</span>( <span style="color:#b44">&#34;boo!&#34;</span> )
+    <span style="color:#a2f;font-weight:bold">print</span>( <span style="color:#b44"></span><span style="color:#b44">&#34;boo!&#34;</span> )
 
 
 <span style="color:#a2f;font-weight:bold">def</span> <span style="color:#00a000">proc2</span>():
-    <span style="color:#a2f;font-weight:bold">print</span>( <span style="color:#b44">&#34;blah blah blah&#34;</span> )
+    <span style="color:#a2f;font-weight:bold">print</span>( <span style="color:#b44"></span><span style="color:#b44">&#34;blah blah blah&#34;</span> )
 
 <span style="color:#080;font-style:italic">#--------test procedures in a function called &#39;main&#39;</span>
 
@@ -120,7 +120,7 @@ getANumber()</code></pre></div>
     proc2()
 
 <span style="color:#080;font-style:italic">#---------- run main if this file is run</span>
-<span style="color:#a2f;font-weight:bold">if</span> __name__ <span style="color:#666">==</span> <span style="color:#b44">&#34;__main__&#34;</span>:
+<span style="color:#a2f;font-weight:bold">if</span> __name__ <span style="color:#666">==</span> <span style="color:#b44"></span><span style="color:#b44">&#34;__main__&#34;</span>:
     main()</code></pre></div>
 <h2 id="using-a-test-input-file">Using a test input file</h2>
 
@@ -130,11 +130,11 @@ getANumber()</code></pre></div>
 <li>Also, make sure you close the file (see modified __main__ below)</li>
 </ul>
 <div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#080;font-style:italic">#-------------- redirect input</span>
-f <span style="color:#666">=</span> <span style="color:#a2f">open</span>(<span style="color:#b44">&#39;input.txt&#39;</span>)
-<span style="color:#a2f;font-weight:bold">def</span> <span style="color:#00a000">input</span>( s<span style="color:#666">=</span><span style="color:#b44">&#39;&#39;</span> ):
+f <span style="color:#666">=</span> <span style="color:#a2f">open</span>(<span style="color:#b44"></span><span style="color:#b44">&#39;input.txt&#39;</span>)
+<span style="color:#a2f;font-weight:bold">def</span> <span style="color:#00a000">input</span>( s<span style="color:#666">=</span><span style="color:#b44"></span><span style="color:#b44">&#39;&#39;</span> ):
     line <span style="color:#666">=</span> f<span style="color:#666">.</span>readline()
     <span style="color:#080;font-style:italic"># skip comments / blank lines</span>
-    <span style="color:#a2f;font-weight:bold">if</span>( line[<span style="color:#666">0</span>] <span style="color:#a2f;font-weight:bold">in</span> [<span style="color:#b44">&#39;#&#39;</span>,<span style="color:#b44">&#39;</span><span style="color:#b62;font-weight:bold">\n</span><span style="color:#b44">&#39;</span>] ):
+    <span style="color:#a2f;font-weight:bold">if</span>( line[<span style="color:#666">0</span>] <span style="color:#a2f;font-weight:bold">in</span> [<span style="color:#b44"></span><span style="color:#b44">&#39;#&#39;</span>,<span style="color:#b44"></span><span style="color:#b44">&#39;</span><span style="color:#b62;font-weight:bold">\n</span><span style="color:#b44">&#39;</span>] ):
         <span style="color:#a2f;font-weight:bold">return</span> <span style="color:#a2f">input</span>(s)
     <span style="color:#a2f;font-weight:bold">return</span> line<span style="color:#666">.</span>strip()
 
@@ -146,7 +146,7 @@ f <span style="color:#666">=</span> <span style="color:#a2f">open</span>(<span s
     <span style="color:#080;font-style:italic"># CALL PROCEDURES HERE</span>
     <span style="color:#a2f;font-weight:bold">pass</span>
 
-<span style="color:#a2f;font-weight:bold">if</span> __name__<span style="color:#666">==</span><span style="color:#b44">&#34;__main__&#34;</span>:
+<span style="color:#a2f;font-weight:bold">if</span> __name__<span style="color:#666">==</span><span style="color:#b44"></span><span style="color:#b44">&#34;__main__&#34;</span>:
     <span style="color:#a2f;font-weight:bold">try</span>:
         main()
     <span style="color:#a2f;font-weight:bold">finally</span>:

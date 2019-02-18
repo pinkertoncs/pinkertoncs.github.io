@@ -55,26 +55,26 @@ It is provided to programmers as a module.</p>
 <li>A pie chart is a circular graph which is divided into slices to illustrate proportions.</li>
 </ul>
 <div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#a2f;font-weight:bold">import</span> <span style="color:#00f;font-weight:bold">matplotlib</span>
-matplotlib<span style="color:#666">.</span>use(<span style="color:#b44">&#39;Agg&#39;</span>)
+matplotlib<span style="color:#666">.</span>use(<span style="color:#b44"></span><span style="color:#b44">&#39;Agg&#39;</span>)
 <span style="color:#a2f;font-weight:bold">import</span> <span style="color:#00f;font-weight:bold">matplotlib.pyplot</span> <span style="color:#a2f;font-weight:bold">as</span> <span style="color:#00f;font-weight:bold">plt</span>
 
 <span style="color:#080;font-style:italic"># graph labels</span>
-labels <span style="color:#666">=</span> [<span style="color:#b44">&#39;Chicken&#39;</span>, <span style="color:#b44">&#39;Fish&#39;</span>, <span style="color:#b44">&#39;Steak&#39;</span>, <span style="color:#b44">&#39;Vegetarian&#39;</span>]
+labels <span style="color:#666">=</span> [<span style="color:#b44"></span><span style="color:#b44">&#39;Chicken&#39;</span>, <span style="color:#b44"></span><span style="color:#b44">&#39;Fish&#39;</span>, <span style="color:#b44"></span><span style="color:#b44">&#39;Steak&#39;</span>, <span style="color:#b44"></span><span style="color:#b44">&#39;Vegetarian&#39;</span>]
 
 <span style="color:#080;font-style:italic"># data</span>
 num_dishes <span style="color:#666">=</span> [<span style="color:#666">34</span>, <span style="color:#666">11</span>, <span style="color:#666">47</span>, <span style="color:#666">3</span>]
 
 <span style="color:#080;font-style:italic"># colors for slices</span>
-colors <span style="color:#666">=</span> [<span style="color:#b44">&#39;yellow&#39;</span>, <span style="color:#b44">&#39;blue&#39;</span>, <span style="color:#b44">&#39;red&#39;</span>, <span style="color:#b44">&#39;green&#39;</span>]
+colors <span style="color:#666">=</span> [<span style="color:#b44"></span><span style="color:#b44">&#39;yellow&#39;</span>, <span style="color:#b44"></span><span style="color:#b44">&#39;blue&#39;</span>, <span style="color:#b44"></span><span style="color:#b44">&#39;red&#39;</span>, <span style="color:#b44"></span><span style="color:#b44">&#39;green&#39;</span>]
 
 <span style="color:#080;font-style:italic"># create the pie chart</span>
 plt<span style="color:#666">.</span>pie(num_dishes, labels<span style="color:#666">=</span>labels, colors<span style="color:#666">=</span>colors)
 
 <span style="color:#080;font-style:italic"># equal x and y increments</span>
-plt<span style="color:#666">.</span>axis(<span style="color:#b44">&#39;equal&#39;</span>)
+plt<span style="color:#666">.</span>axis(<span style="color:#b44"></span><span style="color:#b44">&#39;equal&#39;</span>)
 
 <span style="color:#080;font-style:italic"># save the graph</span>
-plt<span style="color:#666">.</span>savefig(<span style="color:#b44">&#39;piechart&#39;</span>)</code></pre></div>
+plt<span style="color:#666">.</span>savefig(<span style="color:#b44"></span><span style="color:#b44">&#39;piechart&#39;</span>)</code></pre></div>
 <p><img src="/images/cp1/unit-05/pie.png" alt="" /></p>
 
 <h2 id="bar-chart">Bar Chart</h2>
@@ -83,11 +83,11 @@ plt<span style="color:#666">.</span>savefig(<span style="color:#b44">&#39;piecha
 <li>A bar chart is a graph that show information using rectangular bars with lengths that represent their values</li>
 </ul>
 <div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#a2f;font-weight:bold">import</span> <span style="color:#00f;font-weight:bold">matplotlib</span>
-matplotlib<span style="color:#666">.</span>use(<span style="color:#b44">&#39;Agg&#39;</span>)
+matplotlib<span style="color:#666">.</span>use(<span style="color:#b44"></span><span style="color:#b44">&#39;Agg&#39;</span>)
 <span style="color:#a2f;font-weight:bold">import</span> <span style="color:#00f;font-weight:bold">matplotlib.pyplot</span> <span style="color:#a2f;font-weight:bold">as</span> <span style="color:#00f;font-weight:bold">plt</span>
 
 <span style="color:#080;font-style:italic"># graph labels</span>
-labels <span style="color:#666">=</span> [<span style="color:#b44">&#39;Chicken&#39;</span>, <span style="color:#b44">&#39;Fish&#39;</span>, <span style="color:#b44">&#39;Steak&#39;</span>, <span style="color:#b44">&#39;Vegetarian&#39;</span>]
+labels <span style="color:#666">=</span> [<span style="color:#b44"></span><span style="color:#b44">&#39;Chicken&#39;</span>, <span style="color:#b44"></span><span style="color:#b44">&#39;Fish&#39;</span>, <span style="color:#b44"></span><span style="color:#b44">&#39;Steak&#39;</span>, <span style="color:#b44"></span><span style="color:#b44">&#39;Vegetarian&#39;</span>]
 
 <span style="color:#080;font-style:italic"># data</span>
 num_dishes <span style="color:#666">=</span> [<span style="color:#666">34</span>, <span style="color:#666">11</span>, <span style="color:#666">47</span>, <span style="color:#666">3</span>]
@@ -96,16 +96,16 @@ num_dishes <span style="color:#666">=</span> [<span style="color:#666">34</span>
 x <span style="color:#666">=</span> <span style="color:#a2f">range</span>(<span style="color:#a2f">len</span>(num_dishes))
 
 <span style="color:#080;font-style:italic"># plot the data</span>
-plt<span style="color:#666">.</span>bar(x, num_dishes, align<span style="color:#666">=</span><span style="color:#b44">&#39;center&#39;</span>)
+plt<span style="color:#666">.</span>bar(x, num_dishes, align<span style="color:#666">=</span><span style="color:#b44"></span><span style="color:#b44">&#39;center&#39;</span>)
 
 <span style="color:#080;font-style:italic"># label the xticks with the dish name</span>
 plt<span style="color:#666">.</span>xticks(x, labels)
 
 <span style="color:#080;font-style:italic"># describe the y axis</span>
-plt<span style="color:#666">.</span>ylabel(<span style="color:#b44">&#39;Number of Dishes&#39;</span>)
+plt<span style="color:#666">.</span>ylabel(<span style="color:#b44"></span><span style="color:#b44">&#39;Number of Dishes&#39;</span>)
 
 <span style="color:#080;font-style:italic"># save the graph</span>
-plt<span style="color:#666">.</span>savefig(<span style="color:#b44">&#39;barchart&#39;</span>)</code></pre></div>
+plt<span style="color:#666">.</span>savefig(<span style="color:#b44"></span><span style="color:#b44">&#39;barchart&#39;</span>)</code></pre></div>
 <p><img src="/images/cp1/unit-05/bar.png" alt="" /></p>
 
 <h2 id="line-chart">Line Chart</h2>
@@ -114,7 +114,7 @@ plt<span style="color:#666">.</span>savefig(<span style="color:#b44">&#39;barcha
 <li>A line chart is graph that shows information as a grouping on points connected by lines.</li>
 </ul>
 <div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#a2f;font-weight:bold">import</span> <span style="color:#00f;font-weight:bold">matplotlib</span>
-matplotlib<span style="color:#666">.</span>use(<span style="color:#b44">&#39;Agg&#39;</span>)
+matplotlib<span style="color:#666">.</span>use(<span style="color:#b44"></span><span style="color:#b44">&#39;Agg&#39;</span>)
 <span style="color:#a2f;font-weight:bold">import</span> <span style="color:#00f;font-weight:bold">matplotlib.pyplot</span> <span style="color:#a2f;font-weight:bold">as</span> <span style="color:#00f;font-weight:bold">plt</span>
 
 <span style="color:#080;font-style:italic"># create a subplot, (1 row , 1 col) aka. 1 plot</span>
@@ -122,7 +122,7 @@ matplotlib<span style="color:#666">.</span>use(<span style="color:#b44">&#39;Agg
 fig, ax <span style="color:#666">=</span> plt<span style="color:#666">.</span>subplots(<span style="color:#666">1</span>, <span style="color:#666">1</span>)
 
 <span style="color:#080;font-style:italic"># graph labels</span>
-labels <span style="color:#666">=</span> [<span style="color:#b44">&#39;Chicken&#39;</span>, <span style="color:#b44">&#39;Fish&#39;</span>, <span style="color:#b44">&#39;Steak&#39;</span>, <span style="color:#b44">&#39;Vegetarian&#39;</span>]
+labels <span style="color:#666">=</span> [<span style="color:#b44"></span><span style="color:#b44">&#39;Chicken&#39;</span>, <span style="color:#b44"></span><span style="color:#b44">&#39;Fish&#39;</span>, <span style="color:#b44"></span><span style="color:#b44">&#39;Steak&#39;</span>, <span style="color:#b44"></span><span style="color:#b44">&#39;Vegetarian&#39;</span>]
 
 <span style="color:#080;font-style:italic"># data</span>
 num_dishes <span style="color:#666">=</span> [<span style="color:#666">34</span>, <span style="color:#666">11</span>, <span style="color:#666">47</span>, <span style="color:#666">3</span>]
@@ -140,7 +140,7 @@ ax<span style="color:#666">.</span>set_xticks(x)
 ax<span style="color:#666">.</span>set_xticklabels(labels)
 
 <span style="color:#080;font-style:italic"># save the graph</span>
-plt<span style="color:#666">.</span>savefig(<span style="color:#b44">&#39;linechart&#39;</span>)</code></pre></div>
+plt<span style="color:#666">.</span>savefig(<span style="color:#b44"></span><span style="color:#b44">&#39;linechart&#39;</span>)</code></pre></div>
 <p><img src="/images/cp1/unit-05/line.png" alt="" /></p>
 
 </main>
