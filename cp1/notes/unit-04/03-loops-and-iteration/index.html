@@ -54,11 +54,11 @@
 </ul></li>
 <li>If you want to print just a line break, you can call <strong>print</strong> with no parameters</li>
 </ul>
-<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#a2f;font-weight:bold">print</span>( <span style="color:#b44"></span><span style="color:#b44">&#34;joe&#34;</span> )
-<span style="color:#a2f;font-weight:bold">print</span>( <span style="color:#b44"></span><span style="color:#b44">&#34;bob&#34;</span>, end<span style="color:#666">=</span><span style="color:#b44"></span><span style="color:#b44">&#34;.&#34;</span> )
-<span style="color:#a2f;font-weight:bold">print</span>( <span style="color:#b44"></span><span style="color:#b44">&#34;jane&#34;</span> )
+<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#a2f;font-weight:bold">print</span>( <span style="color:#b44">&#34;joe&#34;</span> )
+<span style="color:#a2f;font-weight:bold">print</span>( <span style="color:#b44">&#34;bob&#34;</span>, end<span style="color:#666">=</span><span style="color:#b44">&#34;.&#34;</span> )
+<span style="color:#a2f;font-weight:bold">print</span>( <span style="color:#b44">&#34;jane&#34;</span> )
 <span style="color:#a2f;font-weight:bold">print</span>()               <span style="color:#080;font-style:italic"># extra line break</span>
-<span style="color:#a2f;font-weight:bold">print</span>( <span style="color:#b44"></span><span style="color:#b44">&#34;billy&#34;</span>, <span style="color:#b44"></span><span style="color:#b44">&#34;jess&#34;</span> )</code></pre></div>
+<span style="color:#a2f;font-weight:bold">print</span>( <span style="color:#b44">&#34;billy&#34;</span>, <span style="color:#b44">&#34;jess&#34;</span> )</code></pre></div>
 <h3 id="output">Output</h3>
 
 <pre><code>joe
@@ -78,7 +78,7 @@ billy jess
 </ul>
 <div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">x<span style="color:#666">=</span><span style="color:#666">0</span>
 <span style="color:#a2f;font-weight:bold">while</span>( x <span style="color:#666">&lt;</span> <span style="color:#666">10</span> ):
-    <span style="color:#a2f;font-weight:bold">print</span>(x, end<span style="color:#666">=</span><span style="color:#b44"></span><span style="color:#b44">&#39;,&#39;</span>)
+    <span style="color:#a2f;font-weight:bold">print</span>(x, end<span style="color:#666">=</span><span style="color:#b44">&#39;,&#39;</span>)
     x <span style="color:#666">+=</span> <span style="color:#666">1</span>
 <span style="color:#a2f;font-weight:bold">print</span>()</code></pre></div>
 <h3 id="output-1">Output</h3>
@@ -117,15 +117,15 @@ billy jess
 </ul></li>
 </ul>
 <div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#a2f;font-weight:bold">for</span> x <span style="color:#a2f;font-weight:bold">in</span> <span style="color:#a2f">range</span>(<span style="color:#666">10</span>):
-    <span style="color:#a2f;font-weight:bold">print</span>(x, end<span style="color:#666">=</span><span style="color:#b44"></span><span style="color:#b44">&#39;,&#39;</span>)
+    <span style="color:#a2f;font-weight:bold">print</span>(x, end<span style="color:#666">=</span><span style="color:#b44">&#39;,&#39;</span>)
 <span style="color:#a2f;font-weight:bold">print</span>()
 
 <span style="color:#a2f;font-weight:bold">for</span> x <span style="color:#a2f;font-weight:bold">in</span> <span style="color:#a2f">range</span>(<span style="color:#666">5</span>,<span style="color:#666">10</span>):
-    <span style="color:#a2f;font-weight:bold">print</span>(x, end<span style="color:#666">=</span><span style="color:#b44"></span><span style="color:#b44">&#39;,&#39;</span>)
+    <span style="color:#a2f;font-weight:bold">print</span>(x, end<span style="color:#666">=</span><span style="color:#b44">&#39;,&#39;</span>)
 <span style="color:#a2f;font-weight:bold">print</span>()
 
 <span style="color:#a2f;font-weight:bold">for</span> x <span style="color:#a2f;font-weight:bold">in</span> <span style="color:#a2f">range</span>(<span style="color:#666">0</span>,<span style="color:#666">10</span>,<span style="color:#666">2</span>):
-    <span style="color:#a2f;font-weight:bold">print</span>(x, end<span style="color:#666">=</span><span style="color:#b44"></span><span style="color:#b44">&#39;,&#39;</span>)
+    <span style="color:#a2f;font-weight:bold">print</span>(x, end<span style="color:#666">=</span><span style="color:#b44">&#39;,&#39;</span>)
 <span style="color:#a2f;font-weight:bold">print</span>()</code></pre></div>
 <h3 id="output-2">Output</h3>
 
@@ -148,17 +148,17 @@ billy jess
 </ul></li>
 <li>You can also <strong>iterate with the index</strong> using the range function</li>
 </ul>
-<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">vowels <span style="color:#666">=</span> [<span style="color:#b44"></span><span style="color:#b44">&#39;a&#39;</span>,<span style="color:#b44"></span><span style="color:#b44">&#39;e&#39;</span>,<span style="color:#b44"></span><span style="color:#b44">&#39;i&#39;</span>,<span style="color:#b44"></span><span style="color:#b44">&#39;o&#39;</span>,<span style="color:#b44"></span><span style="color:#b44">&#39;u&#39;</span>]
+<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">vowels <span style="color:#666">=</span> [<span style="color:#b44">&#39;a&#39;</span>,<span style="color:#b44">&#39;e&#39;</span>,<span style="color:#b44">&#39;i&#39;</span>,<span style="color:#b44">&#39;o&#39;</span>,<span style="color:#b44">&#39;u&#39;</span>]
 
 <span style="color:#080;font-style:italic"># method1</span>
 <span style="color:#a2f;font-weight:bold">for</span> letter <span style="color:#a2f;font-weight:bold">in</span> vowels:
-    <span style="color:#a2f;font-weight:bold">print</span>(letter, end<span style="color:#666">=</span><span style="color:#b44"></span><span style="color:#b44">&#39;,&#39;</span>)
+    <span style="color:#a2f;font-weight:bold">print</span>(letter, end<span style="color:#666">=</span><span style="color:#b44">&#39;,&#39;</span>)
 <span style="color:#a2f;font-weight:bold">print</span>()
 
 <span style="color:#080;font-style:italic"># method2</span>
 n <span style="color:#666">=</span> <span style="color:#a2f">len</span>(vowels)
 <span style="color:#a2f;font-weight:bold">for</span> index <span style="color:#a2f;font-weight:bold">in</span> <span style="color:#a2f">range</span>(n):
-    <span style="color:#a2f;font-weight:bold">print</span>( vowels[index], end<span style="color:#666">=</span><span style="color:#b44"></span><span style="color:#b44">&#39;-&#39;</span> )
+    <span style="color:#a2f;font-weight:bold">print</span>( vowels[index], end<span style="color:#666">=</span><span style="color:#b44">&#39;-&#39;</span> )
 <span style="color:#a2f;font-weight:bold">print</span>()</code></pre></div>
 <h3 id="output-3">Output</h3>
 
@@ -172,14 +172,14 @@ a-e-i-o-u-
 <li>The <strong>break</strong> keyword will exit a loop early</li>
 <li>The <strong>continue</strong> keyword will skip to the next iteration</li>
 </ul>
-<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#a2f;font-weight:bold">for</span> char <span style="color:#a2f;font-weight:bold">in</span> <span style="color:#b44"></span><span style="color:#b44">&#34;python&#34;</span>:
-    <span style="color:#a2f;font-weight:bold">if</span> char <span style="color:#666">==</span> <span style="color:#b44"></span><span style="color:#b44">&#39;y&#39;</span>:
+<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#a2f;font-weight:bold">for</span> char <span style="color:#a2f;font-weight:bold">in</span> <span style="color:#b44">&#34;python&#34;</span>:
+    <span style="color:#a2f;font-weight:bold">if</span> char <span style="color:#666">==</span> <span style="color:#b44">&#39;y&#39;</span>:
         <span style="color:#a2f;font-weight:bold">continue</span>
 
-    <span style="color:#a2f;font-weight:bold">if</span> char <span style="color:#666">==</span> <span style="color:#b44"></span><span style="color:#b44">&#39;o&#39;</span>:
+    <span style="color:#a2f;font-weight:bold">if</span> char <span style="color:#666">==</span> <span style="color:#b44">&#39;o&#39;</span>:
         <span style="color:#a2f;font-weight:bold">break</span>
 
-    <span style="color:#a2f;font-weight:bold">print</span>( char, end<span style="color:#666">=</span><span style="color:#b44"></span><span style="color:#b44">&#39;&#39;</span>)</code></pre></div>
+    <span style="color:#a2f;font-weight:bold">print</span>( char, end<span style="color:#666">=</span><span style="color:#b44">&#39;&#39;</span>)</code></pre></div>
 <h3 id="output-4">Output</h3>
 
 <pre><code>pth
@@ -222,9 +222,9 @@ a-e-i-o-u-
 cols <span style="color:#666">=</span> <span style="color:#666">5</span>
 
 <span style="color:#a2f;font-weight:bold">for</span> i <span style="color:#a2f;font-weight:bold">in</span> <span style="color:#a2f">range</span>(rows):
-    <span style="color:#a2f;font-weight:bold">print</span>( i, end<span style="color:#666">=</span><span style="color:#b44"></span><span style="color:#b44">&#39;:</span><span style="color:#b62;font-weight:bold">\t</span><span style="color:#b44">&#39;</span>)
+    <span style="color:#a2f;font-weight:bold">print</span>( i, end<span style="color:#666">=</span><span style="color:#b44">&#39;:</span><span style="color:#b62;font-weight:bold">\t</span><span style="color:#b44">&#39;</span>)
     <span style="color:#a2f;font-weight:bold">for</span> j <span style="color:#a2f;font-weight:bold">in</span> <span style="color:#a2f">range</span>(cols):
-        <span style="color:#a2f;font-weight:bold">print</span>( j, end<span style="color:#666">=</span><span style="color:#b44"></span><span style="color:#b44">&#39;</span><span style="color:#b62;font-weight:bold">\t</span><span style="color:#b44">&#39;</span>)
+        <span style="color:#a2f;font-weight:bold">print</span>( j, end<span style="color:#666">=</span><span style="color:#b44">&#39;</span><span style="color:#b62;font-weight:bold">\t</span><span style="color:#b44">&#39;</span>)
     <span style="color:#a2f;font-weight:bold">print</span>()</code></pre></div>
 <h2 id="output-6">Output</h2>
 
@@ -263,7 +263,7 @@ g <span style="color:#666">=</span> numbers(<span style="color:#666">3</span>)
 
 <span style="color:#080;font-style:italic"># access using loop</span>
 <span style="color:#a2f;font-weight:bold">for</span> x <span style="color:#a2f;font-weight:bold">in</span> numbers(<span style="color:#666">10</span>):
-    <span style="color:#a2f;font-weight:bold">print</span>(x, end<span style="color:#666">=</span><span style="color:#b44"></span><span style="color:#b44">&#39;-&#39;</span>)
+    <span style="color:#a2f;font-weight:bold">print</span>(x, end<span style="color:#666">=</span><span style="color:#b44">&#39;-&#39;</span>)
 <span style="color:#a2f;font-weight:bold">print</span>()
 
 <span style="color:#080;font-style:italic"># cast to list</span>
@@ -293,7 +293,7 @@ g <span style="color:#666">=</span> numbers(<span style="color:#666">3</span>)
         <span style="color:#a2f;font-weight:bold">return</span>
 
     <span style="color:#080;font-style:italic"># do stuff</span>
-    <span style="color:#a2f;font-weight:bold">print</span>(n, end<span style="color:#666">=</span><span style="color:#b44"></span><span style="color:#b44">&#39;, &#39;</span>)
+    <span style="color:#a2f;font-weight:bold">print</span>(n, end<span style="color:#666">=</span><span style="color:#b44">&#39;, &#39;</span>)
 
     <span style="color:#080;font-style:italic"># call recurse with the next #</span>
     recurse(n<span style="color:#666">-</span><span style="color:#666">1</span>)

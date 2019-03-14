@@ -63,30 +63,30 @@
 words <span style="color:#666">=</span> {}
 
 <span style="color:#080;font-style:italic"># add a key / value pair to words</span>
-words[ <span style="color:#b44"></span><span style="color:#b44">&#39;python&#39;</span> ] <span style="color:#666">=</span> <span style="color:#b44"></span><span style="color:#b44">&#34;A scary snake&#34;</span>
+words[ <span style="color:#b44">&#39;python&#39;</span> ] <span style="color:#666">=</span> <span style="color:#b44">&#34;A scary snake&#34;</span>
 
 <span style="color:#080;font-style:italic"># print the whole thing</span>
 <span style="color:#a2f;font-weight:bold">print</span>( words )
 
 <span style="color:#080;font-style:italic"># print one value by key</span>
-<span style="color:#a2f;font-weight:bold">print</span>( words[ <span style="color:#b44"></span><span style="color:#b44">&#39;python&#39;</span> ] )</code></pre></div>
+<span style="color:#a2f;font-weight:bold">print</span>( words[ <span style="color:#b44">&#39;python&#39;</span> ] )</code></pre></div>
 <h2 id="safe-access">Safe access</h2>
 
 <ul>
 <li>The <strong>in</strong> operator can be used to check if a key exists in a dictionary</li>
 <li>Alternatively, you could attempt the access in a <strong>try</strong> statement and catch the error if one occurs</li>
 </ul>
-<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">key <span style="color:#666">=</span> <span style="color:#b44"></span><span style="color:#b44">&#39;python&#39;</span>
+<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">key <span style="color:#666">=</span> <span style="color:#b44">&#39;python&#39;</span>
 
 <span style="color:#080;font-style:italic"># ask for permission</span>
 <span style="color:#a2f;font-weight:bold">if</span> key <span style="color:#a2f;font-weight:bold">in</span> words:
     <span style="color:#a2f;font-weight:bold">print</span>( words[ key ] )
 <span style="color:#a2f;font-weight:bold">else</span>:
-    <span style="color:#a2f;font-weight:bold">print</span>( <span style="color:#b44"></span><span style="color:#b44">&#39;key&#39;</span>, key, <span style="color:#b44"></span><span style="color:#b44">&#39;not found&#39;</span> )</code></pre></div><div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#080;font-style:italic"># ask for forgiveness</span>
+    <span style="color:#a2f;font-weight:bold">print</span>( <span style="color:#b44">&#39;key&#39;</span>, key, <span style="color:#b44">&#39;not found&#39;</span> )</code></pre></div><div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#080;font-style:italic"># ask for forgiveness</span>
 <span style="color:#a2f;font-weight:bold">try</span>:
     <span style="color:#a2f;font-weight:bold">print</span>( words[ key ] )
 <span style="color:#a2f;font-weight:bold">except</span> <span style="color:#d2413a;font-weight:bold">KeyError</span>:
-    <span style="color:#a2f;font-weight:bold">print</span>( <span style="color:#b44"></span><span style="color:#b44">&#39;key&#39;</span>,key,<span style="color:#b44"></span><span style="color:#b44">&#39;not found&#39;</span> )</code></pre></div>
+    <span style="color:#a2f;font-weight:bold">print</span>( <span style="color:#b44">&#39;key&#39;</span>,key,<span style="color:#b44">&#39;not found&#39;</span> )</code></pre></div>
 <h2 id="iterating">Iterating</h2>
 
 <ul>
@@ -95,17 +95,17 @@ words[ <span style="color:#b44"></span><span style="color:#b44">&#39;python&#39;
 <div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#080;font-style:italic"># iterate with keys, 2 ways</span>
 <span style="color:#080;font-style:italic">#for key in words.keys():</span>
 <span style="color:#a2f;font-weight:bold">for</span> key <span style="color:#a2f;font-weight:bold">in</span> words:
-    <span style="color:#a2f;font-weight:bold">print</span>( key, <span style="color:#b44"></span><span style="color:#b44">&#39;:&#39;</span>, words[key], end<span style="color:#666">=</span><span style="color:#b44"></span><span style="color:#b44">&#39;, &#39;</span> )
+    <span style="color:#a2f;font-weight:bold">print</span>( key, <span style="color:#b44">&#39;:&#39;</span>, words[key], end<span style="color:#666">=</span><span style="color:#b44">&#39;, &#39;</span> )
 <span style="color:#a2f;font-weight:bold">print</span>()
 
 <span style="color:#080;font-style:italic"># iterate with values</span>
 <span style="color:#a2f;font-weight:bold">for</span> value <span style="color:#a2f;font-weight:bold">in</span> words<span style="color:#666">.</span>values():
-    <span style="color:#a2f;font-weight:bold">print</span>( value, end<span style="color:#666">=</span><span style="color:#b44"></span><span style="color:#b44">&#39;, &#39;</span> )
+    <span style="color:#a2f;font-weight:bold">print</span>( value, end<span style="color:#666">=</span><span style="color:#b44">&#39;, &#39;</span> )
 <span style="color:#a2f;font-weight:bold">print</span>()
 
 <span style="color:#080;font-style:italic"># iterate with keys and values</span>
 <span style="color:#a2f;font-weight:bold">for</span> key, value <span style="color:#a2f;font-weight:bold">in</span> words<span style="color:#666">.</span>items():
-    <span style="color:#a2f;font-weight:bold">print</span>( key, <span style="color:#b44"></span><span style="color:#b44">&#39;:&#39;</span>, value, end<span style="color:#666">=</span><span style="color:#b44"></span><span style="color:#b44">&#39;, &#39;</span> )
+    <span style="color:#a2f;font-weight:bold">print</span>( key, <span style="color:#b44">&#39;:&#39;</span>, value, end<span style="color:#666">=</span><span style="color:#b44">&#39;, &#39;</span> )
 <span style="color:#a2f;font-weight:bold">print</span>()</code></pre></div>
 <h2 id="updating">Updating</h2>
 
@@ -127,21 +127,21 @@ words[ <span style="color:#b44"></span><span style="color:#b44">&#39;python&#39;
 
 <span style="color:#080;font-style:italic"># define another dict</span>
 words2 <span style="color:#666">=</span> {
-    <span style="color:#b44"></span><span style="color:#b44">&#39;dictionary&#39;</span>: <span style="color:#b44"></span><span style="color:#b44">&#39;a heavy book.&#39;</span>,
-    <span style="color:#b44"></span><span style="color:#b44">&#39;class&#39;</span>: <span style="color:#b44"></span><span style="color:#b44">&#39;a group of students.&#39;</span>
+    <span style="color:#b44">&#39;dictionary&#39;</span>: <span style="color:#b44">&#39;a heavy book.&#39;</span>,
+    <span style="color:#b44">&#39;class&#39;</span>: <span style="color:#b44">&#39;a group of students.&#39;</span>
 }
 
 <span style="color:#080;font-style:italic"># add items from one dict to another</span>
 words<span style="color:#666">.</span>update( words2 )
 
 <span style="color:#080;font-style:italic"># add another key/item</span>
-words<span style="color:#666">.</span>update( { <span style="color:#b44"></span><span style="color:#b44">&#39;object&#39;</span>: <span style="color:#b44"></span><span style="color:#b44">&#39;something&#39;</span>} )
+words<span style="color:#666">.</span>update( { <span style="color:#b44">&#39;object&#39;</span>: <span style="color:#b44">&#39;something&#39;</span>} )
 
 <span style="color:#080;font-style:italic"># change a definition</span>
-words<span style="color:#666">.</span>update( { <span style="color:#b44"></span><span style="color:#b44">&#39;class&#39;</span>: <span style="color:#b44"></span><span style="color:#b44">&#39;an echelon of society&#39;</span>} )
+words<span style="color:#666">.</span>update( { <span style="color:#b44">&#39;class&#39;</span>: <span style="color:#b44">&#39;an echelon of society&#39;</span>} )
 
 <span style="color:#080;font-style:italic"># remove a key/value pair</span>
-value <span style="color:#666">=</span> words<span style="color:#666">.</span>pop(<span style="color:#b44"></span><span style="color:#b44">&#39;dictionary&#39;</span>)
+value <span style="color:#666">=</span> words<span style="color:#666">.</span>pop(<span style="color:#b44">&#39;dictionary&#39;</span>)
 <span style="color:#a2f;font-weight:bold">print</span>(value)
 
 <span style="color:#a2f;font-weight:bold">print</span>(words)</code></pre></div>
@@ -157,13 +157,13 @@ value <span style="color:#666">=</span> words<span style="color:#666">.</span>po
 <li>to get a random key, you need to cast the dictionary keyset to a list</li>
 </ul>
 <div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#080;font-style:italic"># getting keys list</span>
-a_dict <span style="color:#666">=</span> { <span style="color:#b44"></span><span style="color:#b44">&#39;a&#39;</span>:<span style="color:#b44"></span><span style="color:#b44">&#39;apple&#39;</span>, <span style="color:#b44"></span><span style="color:#b44">&#39;c&#39;</span>:<span style="color:#b44"></span><span style="color:#b44">&#39;cherry&#39;</span>, <span style="color:#b44"></span><span style="color:#b44">&#39;b&#39;</span>:<span style="color:#b44"></span><span style="color:#b44">&#39;banana&#39;</span> }
+a_dict <span style="color:#666">=</span> { <span style="color:#b44">&#39;a&#39;</span>:<span style="color:#b44">&#39;apple&#39;</span>, <span style="color:#b44">&#39;c&#39;</span>:<span style="color:#b44">&#39;cherry&#39;</span>, <span style="color:#b44">&#39;b&#39;</span>:<span style="color:#b44">&#39;banana&#39;</span> }
 <span style="color:#a2f;font-weight:bold">print</span>(a_dict)
 <span style="color:#a2f;font-weight:bold">print</span>(<span style="color:#a2f">list</span>(a_dict))
 <span style="color:#a2f;font-weight:bold">print</span>(<span style="color:#a2f">sorted</span>(a_dict))
 
 <span style="color:#080;font-style:italic"># random key / value from dict</span>
-a_dict <span style="color:#666">=</span> { <span style="color:#b44"></span><span style="color:#b44">&#39;a&#39;</span>:<span style="color:#b44"></span><span style="color:#b44">&#39;apple&#39;</span>, <span style="color:#b44"></span><span style="color:#b44">&#39;b&#39;</span>:<span style="color:#b44"></span><span style="color:#b44">&#39;banana&#39;</span>, <span style="color:#b44"></span><span style="color:#b44">&#39;c&#39;</span>:<span style="color:#b44"></span><span style="color:#b44">&#39;cherry&#39;</span> }
+a_dict <span style="color:#666">=</span> { <span style="color:#b44">&#39;a&#39;</span>:<span style="color:#b44">&#39;apple&#39;</span>, <span style="color:#b44">&#39;b&#39;</span>:<span style="color:#b44">&#39;banana&#39;</span>, <span style="color:#b44">&#39;c&#39;</span>:<span style="color:#b44">&#39;cherry&#39;</span> }
 keys <span style="color:#666">=</span> <span style="color:#a2f">list</span>(a_dict)
 key <span style="color:#666">=</span> random<span style="color:#666">.</span>choice(keys)
 <span style="color:#a2f;font-weight:bold">print</span>(a_dict[key])</code></pre></div>

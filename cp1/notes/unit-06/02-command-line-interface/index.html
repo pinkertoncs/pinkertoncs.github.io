@@ -102,11 +102,11 @@ A small leaflet
 </ul>
 <div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#a2f;font-weight:bold">def</span> <span style="color:#00a000">startCLI</span>():
     <span style="color:#a2f;font-weight:bold">while</span>(<span style="color:#666">1</span>):
-        line <span style="color:#666">=</span> <span style="color:#a2f">input</span>(<span style="color:#b44"></span><span style="color:#b44">&#39;&gt;&#39;</span>)
+        line <span style="color:#666">=</span> <span style="color:#a2f">input</span>(<span style="color:#b44">&#39;&gt;&#39;</span>)
         tokens <span style="color:#666">=</span> line<span style="color:#666">.</span>split()
         cmd <span style="color:#666">=</span> tokens[<span style="color:#666">0</span>]
         args <span style="color:#666">=</span> tokens[<span style="color:#666">1</span>:]
-        <span style="color:#a2f;font-weight:bold">if</span> cmd <span style="color:#a2f;font-weight:bold">in</span> [<span style="color:#b44"></span><span style="color:#b44">&#39;quit&#39;</span>, <span style="color:#b44"></span><span style="color:#b44">&#39;exit&#39;</span>, <span style="color:#b44"></span><span style="color:#b44">&#39;bye&#39;</span>]:
+        <span style="color:#a2f;font-weight:bold">if</span> cmd <span style="color:#a2f;font-weight:bold">in</span> [<span style="color:#b44">&#39;quit&#39;</span>, <span style="color:#b44">&#39;exit&#39;</span>, <span style="color:#b44">&#39;bye&#39;</span>]:
             <span style="color:#a2f;font-weight:bold">break</span>
         process( cmd, args )</code></pre></div>
 <h2 id="command-processing">Command processing</h2>
@@ -122,16 +122,16 @@ A small leaflet
 
 <p><strong>with conditionals</strong></p>
 <div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#a2f;font-weight:bold">def</span> <span style="color:#00a000">process</span>( cmd, args ):
-    <span style="color:#a2f;font-weight:bold">if</span>( cmd <span style="color:#666">==</span> <span style="color:#b44"></span><span style="color:#b44">&#39;look&#39;</span> ):
+    <span style="color:#a2f;font-weight:bold">if</span>( cmd <span style="color:#666">==</span> <span style="color:#b44">&#39;look&#39;</span> ):
         look( args )
-    <span style="color:#a2f;font-weight:bold">elif</span>( cmd <span style="color:#666">==</span> <span style="color:#b44"></span><span style="color:#b44">&#39;open&#39;</span> ):
+    <span style="color:#a2f;font-weight:bold">elif</span>( cmd <span style="color:#666">==</span> <span style="color:#b44">&#39;open&#39;</span> ):
         <span style="color:#a2f">open</span>( args )
     <span style="color:#a2f;font-weight:bold">else</span>:
-        <span style="color:#a2f;font-weight:bold">print</span>(<span style="color:#b44"></span><span style="color:#b44">&#34;Sorry, I don&#39;t understand.&#34;</span>)</code></pre></div>
+        <span style="color:#a2f;font-weight:bold">print</span>(<span style="color:#b44">&#34;Sorry, I don&#39;t understand.&#34;</span>)</code></pre></div>
 <p><strong>with a dictionary</strong></p>
 <div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">commands <span style="color:#666">=</span> {
-    <span style="color:#b44"></span><span style="color:#b44">&#39;look&#39;</span> : look,
-    <span style="color:#b44"></span><span style="color:#b44">&#39;open&#39;</span> : <span style="color:#a2f">open</span>
+    <span style="color:#b44">&#39;look&#39;</span> : look,
+    <span style="color:#b44">&#39;open&#39;</span> : <span style="color:#a2f">open</span>
 }
 
 <span style="color:#a2f;font-weight:bold">def</span> <span style="color:#00a000">process</span>( cmd, args ):
@@ -139,7 +139,7 @@ A small leaflet
         foo <span style="color:#666">=</span> commands[cmd]
         foo( args )
     <span style="color:#a2f;font-weight:bold">else</span>:
-        <span style="color:#a2f;font-weight:bold">print</span>(<span style="color:#b44"></span><span style="color:#b44">&#34;Sorry, I don&#39;t understand.&#34;</span>)</code></pre></div>
+        <span style="color:#a2f;font-weight:bold">print</span>(<span style="color:#b44">&#34;Sorry, I don&#39;t understand.&#34;</span>)</code></pre></div>
 </main>
 
   <footer>
