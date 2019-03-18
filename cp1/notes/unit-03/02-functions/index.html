@@ -68,7 +68,7 @@
 </ul>
 <div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#a2f;font-weight:bold">def</span> <span style="color:#00a000">foo</span>():
     <span style="color:#080;font-style:italic"># variable msg is local to foo</span>
-    msg <span style="color:#666">=</span> <span style="color:#b44">&#39;hi&#39;</span>
+    msg <span style="color:#666">=</span> <span style="color:#b44"></span><span style="color:#b44">&#39;hi&#39;</span>
 
 
 <span style="color:#a2f;font-weight:bold">def</span> <span style="color:#00a000">main</span>():
@@ -101,7 +101,7 @@ main()</code></pre></div>
 
 
 <span style="color:#a2f;font-weight:bold">def</span> <span style="color:#00a000">main</span>():
-    note <span style="color:#666">=</span> <span style="color:#b44">&#39;hi&#39;</span> <span style="color:#080;font-style:italic"># 1. assign the value &#34;hi!&#34; to variable note</span>
+    note <span style="color:#666">=</span> <span style="color:#b44"></span><span style="color:#b44">&#39;hi&#39;</span> <span style="color:#080;font-style:italic"># 1. assign the value &#34;hi!&#34; to variable note</span>
     goo(note)   <span style="color:#080;font-style:italic"># 2. pass the value of note to goo</span>
 
 
@@ -120,7 +120,7 @@ main()</code></pre></div>
 <li>You can <em>&lsquo;catch the return value</em> using a variable assignment.</li>
 </ul>
 <div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#a2f;font-weight:bold">def</span> <span style="color:#00a000">hoo</span>():
-    msg <span style="color:#666">=</span> <span style="color:#b44">&#39;hi!&#39;</span>  <span style="color:#080;font-style:italic"># 2. local variable msg gets value &#34;hi!&#34;</span>
+    msg <span style="color:#666">=</span> <span style="color:#b44"></span><span style="color:#b44">&#39;hi!&#39;</span>  <span style="color:#080;font-style:italic"># 2. local variable msg gets value &#34;hi!&#34;</span>
     <span style="color:#a2f;font-weight:bold">return</span> msg   <span style="color:#080;font-style:italic"># 3. value of msg is returned</span>
 
 

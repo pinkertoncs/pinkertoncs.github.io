@@ -50,7 +50,7 @@
 <li>Strings work just like lists of characters</li>
 </ul>
 <div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#080;font-style:italic"># make reference to string</span>
-s <span style="color:#666">=</span> <span style="color:#b44">&#34;Kulik&#34;</span>
+s <span style="color:#666">=</span> <span style="color:#b44"></span><span style="color:#b44">&#34;Kulik&#34;</span>
 
 <span style="color:#080;font-style:italic"># basics: printing, length, indexing</span>
 <span style="color:#a2f;font-weight:bold">print</span>(s)
@@ -59,13 +59,13 @@ s <span style="color:#666">=</span> <span style="color:#b44">&#34;Kulik&#34;</sp
 
 <span style="color:#080;font-style:italic"># iterating</span>
 <span style="color:#a2f;font-weight:bold">for</span> letter <span style="color:#a2f;font-weight:bold">in</span> s:
-    <span style="color:#a2f;font-weight:bold">print</span>(letter, end<span style="color:#666">=</span><span style="color:#b44">&#39;.&#39;</span>)
+    <span style="color:#a2f;font-weight:bold">print</span>(letter, end<span style="color:#666">=</span><span style="color:#b44"></span><span style="color:#b44">&#39;.&#39;</span>)
 <span style="color:#a2f;font-weight:bold">print</span>()
 
 
 <span style="color:#080;font-style:italic"># iterating with index</span>
 <span style="color:#a2f;font-weight:bold">for</span> i <span style="color:#a2f;font-weight:bold">in</span> <span style="color:#a2f">range</span>(<span style="color:#a2f">len</span>(s)):
-    <span style="color:#a2f;font-weight:bold">print</span>(s[i], end<span style="color:#666">=</span><span style="color:#b44">&#39;-&#39;</span>)
+    <span style="color:#a2f;font-weight:bold">print</span>(s[i], end<span style="color:#666">=</span><span style="color:#b44"></span><span style="color:#b44">&#39;-&#39;</span>)
 <span style="color:#a2f;font-weight:bold">print</span>()</code></pre></div>
 <h3 id="output">Output</h3>
 
@@ -83,7 +83,7 @@ K-u-l-i-k-
 <li>works just like list slicing (see notes)</li>
 </ul>
 <div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#080;font-style:italic"># make reference to string</span>
-s <span style="color:#666">=</span> <span style="color:#b44">&#34;Kulik&#34;</span>
+s <span style="color:#666">=</span> <span style="color:#b44"></span><span style="color:#b44">&#34;Kulik&#34;</span>
 
 <span style="color:#080;font-style:italic"># getting slices</span>
 <span style="color:#a2f;font-weight:bold">print</span>(s[<span style="color:#666">2</span>:<span style="color:#666">4</span>])  <span style="color:#080;font-style:italic"># start:end</span>
@@ -103,17 +103,17 @@ k
 <li><strong>find(searchstring, index)</strong> returns the first index of the found searchstring starting at the provided index.</li>
 </ul>
 <div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#080;font-style:italic"># make reference to string</span>
-s <span style="color:#666">=</span> <span style="color:#b44">&#34;kulik&#34;</span>
+s <span style="color:#666">=</span> <span style="color:#b44"></span><span style="color:#b44">&#34;kulik&#34;</span>
 
 <span style="color:#080;font-style:italic"># print all indexes of the letter &#39;k&#39;</span>
-i <span style="color:#666">=</span> s<span style="color:#666">.</span>find(<span style="color:#b44">&#39;k&#39;</span>)
+i <span style="color:#666">=</span> s<span style="color:#666">.</span>find(<span style="color:#b44"></span><span style="color:#b44">&#39;k&#39;</span>)
 <span style="color:#a2f;font-weight:bold">while</span>(i <span style="color:#666">!=</span> <span style="color:#666">-</span><span style="color:#666">1</span>):
-    <span style="color:#a2f;font-weight:bold">print</span>(i, end<span style="color:#666">=</span><span style="color:#b44">&#39;, &#39;</span>)
-    i <span style="color:#666">=</span> s<span style="color:#666">.</span>find(<span style="color:#b44">&#39;k&#39;</span>, i<span style="color:#666">+</span><span style="color:#666">1</span>)
+    <span style="color:#a2f;font-weight:bold">print</span>(i, end<span style="color:#666">=</span><span style="color:#b44"></span><span style="color:#b44">&#39;, &#39;</span>)
+    i <span style="color:#666">=</span> s<span style="color:#666">.</span>find(<span style="color:#b44"></span><span style="color:#b44">&#39;k&#39;</span>, i<span style="color:#666">+</span><span style="color:#666">1</span>)
 <span style="color:#a2f;font-weight:bold">print</span>()
 
 <span style="color:#080;font-style:italic"># find works with substrings</span>
-sub <span style="color:#666">=</span> <span style="color:#b44">&#39;l&#39;</span>
+sub <span style="color:#666">=</span> <span style="color:#b44"></span><span style="color:#b44">&#39;l&#39;</span>
 i <span style="color:#666">=</span> s<span style="color:#666">.</span>find(sub)
 <span style="color:#a2f;font-weight:bold">print</span>(s[i:])</code></pre></div>
 <h3 id="output-2">Output</h3>
@@ -129,7 +129,7 @@ lik
 <li><strong>upper()</strong> and <strong>lower()</strong> returns all CAPS or lowercase, respectively</li>
 <li><strong>replace(this, that)</strong> returns a new string will all occurrences of <em>this</em> replaced with <em>that</em></li>
 </ul>
-<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">s <span style="color:#666">=</span> <span style="color:#b44">&#34;kulik&#34;</span>
+<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">s <span style="color:#666">=</span> <span style="color:#b44"></span><span style="color:#b44">&#34;kulik&#34;</span>
 <span style="color:#a2f;font-weight:bold">print</span>(s)
 
 <span style="color:#080;font-style:italic"># get copy of s in CAPS or lowercase</span>
@@ -138,7 +138,7 @@ lik
 <span style="color:#a2f;font-weight:bold">print</span>(s<span style="color:#666">.</span>lower())
 
 <span style="color:#080;font-style:italic"># get copy with replaced chars</span>
-<span style="color:#a2f;font-weight:bold">print</span>(s<span style="color:#666">.</span>replace(<span style="color:#b44">&#39;k&#39;</span>, <span style="color:#b44">&#39;c&#39;</span>))
+<span style="color:#a2f;font-weight:bold">print</span>(s<span style="color:#666">.</span>replace(<span style="color:#b44"></span><span style="color:#b44">&#39;k&#39;</span>, <span style="color:#b44"></span><span style="color:#b44">&#39;c&#39;</span>))
 
 <span style="color:#080;font-style:italic"># remember: s hasn&#39;t changed</span>
 <span style="color:#a2f;font-weight:bold">print</span>(s)
@@ -164,7 +164,7 @@ KULIK
 <li><strong>join(list)</strong> will return a list as a string joined with the calling object</li>
 </ul>
 <div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#080;font-style:italic"># define &amp; print string with spaces</span>
-ss <span style="color:#666">=</span> <span style="color:#b44">&#34;This is a test&#34;</span>
+ss <span style="color:#666">=</span> <span style="color:#b44"></span><span style="color:#b44">&#34;This is a test&#34;</span>
 <span style="color:#a2f;font-weight:bold">print</span>( ss )
 
 <span style="color:#080;font-style:italic"># split by spaces</span>
@@ -172,11 +172,11 @@ ls <span style="color:#666">=</span> ss<span style="color:#666">.</span>split()
 <span style="color:#a2f;font-weight:bold">print</span>( ls )
 
 <span style="color:#080;font-style:italic"># rejoin with commas</span>
-ss <span style="color:#666">=</span> <span style="color:#b44">&#39;,&#39;</span><span style="color:#666">.</span>join(ls)
+ss <span style="color:#666">=</span> <span style="color:#b44"></span><span style="color:#b44">&#39;,&#39;</span><span style="color:#666">.</span>join(ls)
 <span style="color:#a2f;font-weight:bold">print</span>( ss )
 
 <span style="color:#080;font-style:italic"># split by commas</span>
-ls <span style="color:#666">=</span> ss<span style="color:#666">.</span>split(<span style="color:#b44">&#39;,&#39;</span>)
+ls <span style="color:#666">=</span> ss<span style="color:#666">.</span>split(<span style="color:#b44"></span><span style="color:#b44">&#39;,&#39;</span>)
 <span style="color:#a2f;font-weight:bold">print</span>( ls )</code></pre></div>
 <h3 id="output-4">Output</h3>
 

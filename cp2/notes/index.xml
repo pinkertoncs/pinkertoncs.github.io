@@ -27,8 +27,7 @@
       
       <guid>/cp2/notes/unit-09/01-file-io/</guid>
       <description>References  Tutorialspoint Files and I/O Java Doc - Basic I/O  Input from Console / Files  You can use an InputStreamReader to read from standard (console) input.
-InputStreamReader isr = new InputStreamReader(System.in); You can use a FileReader to read from file input
-FileReader fr = new FileReader(&amp;#34;input.txt&amp;#34;);  Demo import java.io.BufferedReader; import java.io.FileReader; import java.io.IOException; import java.io.InputStreamReader; public class FileReadDemo { public static void main(String[] args){ try { BufferedReader fileIn; String line; // reading from standard input 	fileIn = new BufferedReader(new InputStreamReader(System.</description>
+InputStreamReader isr = new InputStreamReader(System.in);  You can use a FileReader to read from file input  FileReader fr = new FileReader(&amp;#34;input.txt&amp;#34;);  Demo import java.io.BufferedReader; import java.io.FileReader; import java.io.IOException; import java.io.InputStreamReader; public class FileReadDemo { public static void main(String[] args){ try { BufferedReader fileIn; String line; // reading from standard input 	fileIn = new BufferedReader(new InputStreamReader(System.</description>
     </item>
     
     <item>
@@ -56,8 +55,7 @@ FileReader fr = new FileReader(&amp;#34;input.txt&amp;#34;);  Demo import java.i
       
       <guid>/cp2/notes/unit-02/01-java-basics/</guid>
       <description>Readings  Basic Java Syntax Basic Data Types Basic Operators Characters Strings File I/O  Primitive Datatypes  Primitive types are the basic, built-in types All variables nut be declared with their type
-int a_number; float pi = 3.14; Initialize variables by giving then a value or rely on their default Uninitialized Value
-     Data Type Default Value Size     byte 0 1 Byte   short 0 2 Bytes   int 0 4 Bytes   long 0L 8 Bytes   float 0.</description>
+int a_number; float pi = 3.14;  Initialize variables by giving then a value or rely on their default Uninitialized Value     Data Type Default Value Size     byte 0 1 Byte   short 0 2 Bytes   int 0 4 Bytes   long 0L 8 Bytes   float 0.</description>
     </item>
     
     <item>
@@ -196,10 +194,8 @@ Introduction  The Vector class is an abstract container type like Python lists o
       
       <guid>/cp2/notes/unit-09/03-mysql/</guid>
       <description>References  Tutorialspoint JDBC setup MySQL Doc Setup  MySQL Install and Setup  Install MySQL
-sudo apt install mysql Start MySQL
-mysql -h localhost -u root -p  -Note: If you want to change root password later, you can use these commands
-mysql -h localhost -u root -pUPDATE mysql.user SET Password=PASSWORD(&amp;#39;newpassword&amp;#39;) WHERE User=&amp;#39;root&amp;#39;; FLUSH PRIVILEGES; Setting up an example Database  Creare and use EMP database
-create database EMP; use EMP; Create a table</description>
+sudo apt install mysql  Start MySQL  mysql -h localhost -u root -p  -Note: If you want to change root password later, you can use these commands
+mysql -h localhost -u root -pUPDATE mysql.user SET Password=PASSWORD(&amp;#39;newpassword&amp;#39;) WHERE User=&amp;#39;root&amp;#39;; FLUSH PRIVILEGES; Setting up an example Database  Creare and use EMP database</description>
     </item>
     
     <item>

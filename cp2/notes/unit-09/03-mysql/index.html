@@ -48,9 +48,10 @@
 
 <ul>
 <li><p>Install MySQL</p>
-<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sudo apt install mysql</code></pre></div></li>
-
-<li><p>Start MySQL</p>
+<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sudo apt install mysql</code></pre></div>
+<ul>
+<li>Start MySQL</li>
+</ul>
 <div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">mysql -h localhost -u root -p</code></pre></div></li>
 </ul>
 
@@ -62,9 +63,10 @@
 <ul>
 <li><p>Creare and use EMP database</p>
 <div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-mysql" data-lang="mysql">  <span style="color:#a2f;font-weight:bold">create</span> <span style="color:#a2f;font-weight:bold">database</span> EMP;
-  <span style="color:#a2f;font-weight:bold">use</span> EMP;</code></pre></div></li>
-
-<li><p>Create a table</p>
+  <span style="color:#a2f;font-weight:bold">use</span> EMP;</code></pre></div>
+<ul>
+<li>Create a table</li>
+</ul>
 <div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-mysql" data-lang="mysql">  <span style="color:#a2f;font-weight:bold">create</span> <span style="color:#a2f;font-weight:bold">table</span> <span style="color:#00a000">Employees</span> (
   id <span style="color:#0b0;font-weight:bold">int</span> <span style="color:#a2f;font-weight:bold">not</span> <span style="color:#800">null</span>,
   age <span style="color:#0b0;font-weight:bold">int</span> <span style="color:#a2f;font-weight:bold">not</span> <span style="color:#800">null</span>,
@@ -75,14 +77,13 @@
 <div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-mysql" data-lang="mysql"> <span style="color:#a2f;font-weight:bold">INSERT</span> <span style="color:#a2f;font-weight:bold">INTO</span> Employees <span style="color:#a2f;font-weight:bold">VALUES</span> (<span style="color:#666">100</span>, <span style="color:#666">18</span>, <span style="color:#b44">&#39;Zara&#39;</span>, <span style="color:#b44">&#39;Ali&#39;</span>);
  <span style="color:#a2f;font-weight:bold">INSERT</span> <span style="color:#a2f;font-weight:bold">INTO</span> Employees <span style="color:#a2f;font-weight:bold">VALUES</span> (<span style="color:#666">101</span>, <span style="color:#666">25</span>, <span style="color:#b44">&#39;Mahnaz&#39;</span>, <span style="color:#b44">&#39;Fatma&#39;</span>);
  <span style="color:#a2f;font-weight:bold">INSERT</span> <span style="color:#a2f;font-weight:bold">INTO</span> Employees <span style="color:#a2f;font-weight:bold">VALUES</span> (<span style="color:#666">102</span>, <span style="color:#666">30</span>, <span style="color:#b44">&#39;Zaid&#39;</span>, <span style="color:#b44">&#39;Khan&#39;</span>);
- <span style="color:#a2f;font-weight:bold">INSERT</span> <span style="color:#a2f;font-weight:bold">INTO</span> Employees <span style="color:#a2f;font-weight:bold">VALUES</span> (<span style="color:#666">103</span>, <span style="color:#666">28</span>, <span style="color:#b44">&#39;Sumit&#39;</span>, <span style="color:#b44">&#39;Mittal&#39;</span>);</code></pre></div></li>
-</ul>
-
+ <span style="color:#a2f;font-weight:bold">INSERT</span> <span style="color:#a2f;font-weight:bold">INTO</span> Employees <span style="color:#a2f;font-weight:bold">VALUES</span> (<span style="color:#666">103</span>, <span style="color:#666">28</span>, <span style="color:#b44">&#39;Sumit&#39;</span>, <span style="color:#b44">&#39;Mittal&#39;</span>);</code></pre></div>
 <h2 id="setting-up-jdbc">Setting up JDBC</h2>
 
 <ul>
 <li>Should already be in Cloud9&rsquo;s Classpath</li>
 <li>Create a test class with the <a href="http://www.tutorialspoint.com/jdbc/jdbc-sample-code.htm">JDMC sample code</a></li>
+</ul></li>
 </ul>
 
 </main>

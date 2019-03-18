@@ -83,8 +83,7 @@
 </span><span style="color:#080;font-style:italic"></span>b2.onclick <span style="color:#666">=</span> goo;
 
 <span style="color:#080;font-style:italic">// method 3
-</span><span style="color:#080;font-style:italic"></span>b3.addEventListener( <span style="color:#b44">&#39;click&#39;</span>, hoo );
-</code></pre></div>
+</span><span style="color:#080;font-style:italic"></span>b3.addEventListener( <span style="color:#b44">&#39;click&#39;</span>, hoo );</code></pre></div>
 <h2 id="anonymous-functions">Anonymous functions</h2>
 
 <ul>
@@ -99,8 +98,7 @@
 <span style="color:#080;font-style:italic">// method 3 with anonymous function
 </span><span style="color:#080;font-style:italic"></span>b3.addEventListener( <span style="color:#b44">&#39;click&#39;</span>, <span style="color:#a2f;font-weight:bold">function</span>(){
   console.log( <span style="color:#b44">&#39;hoo&#39;</span> )
-})  <span style="color:#080;font-style:italic">// don&#39;t forget to close the parentheses here!
-</span></code></pre></div>
+})  <span style="">// don&#39;t forget to close the parentheses here!</span></code></pre></div>
 <h2 id="form-input-change-events">Form input change events</h2>
 
 <h3 id="oninput-and-onchange"><strong>oninput and onchange</strong></h3>
@@ -128,8 +126,7 @@
 
 <span style="color:#a2f;font-weight:bold">function</span> updateRange(val){
     result2.innerHTML <span style="color:#666">=</span> val
-}
-</code></pre></div>
+}</code></pre></div>
 <h4 id="result">Result</h4>
 
 <p><img src="/images/cp1/unit-09/event1.png" alt="" /></p>
@@ -152,8 +149,7 @@
     pic.src <span style="color:#666">=</span> evt.target.result;
   }
   reader.readAsDataURL( fopen.files[<span style="color:#666">0</span>] )
-})
-</code></pre></div>
+})</code></pre></div>
 <h2 id="input-devices">Input Devices</h2>
 
 <h3 id="mouse-events">Mouse Events</h3>
@@ -182,8 +178,7 @@
   console.log( event.target )  <span style="color:#080;font-style:italic">// this is the element that was clicked
 </span><span style="color:#080;font-style:italic"></span>  console.log( event.x, event.y )
 
-}
-</code></pre></div>
+}</code></pre></div>
 <h3 id="keyboard-events">Keyboard events</h3>
 
 <ul>
@@ -206,8 +201,7 @@
 </ul>
 <div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#a2f">document</span>.body.onkeyup<span style="color:#666">=</span><span style="color:#a2f;font-weight:bold">function</span>(event){
     console.log( event.keyCode )
-}
-</code></pre></div>
+}</code></pre></div>
 </main>
 
   <footer>

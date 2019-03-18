@@ -26,7 +26,8 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/cp1/notes/unit-02/x1-calculator-cli/</guid>
-      <description>Overview  Create a command line interface (CLI) for the calculator program. Use a number-based menu system, for example   1. Tips 2. CtoF 3. FtoC 4. Interest 5. Distance 6. Change ...  Starter code  The while-loop and if-conditional will be covered in a later unit.  # Hint: use your code from project 1 def CLI(): while(1): # show menu x = input( &amp;#34;Select your calculator, or use Q to quit:&amp;#34;) # if the input value is &amp;#39;q&amp;#39; or &amp;#39;Q&amp;#39;, quit if( x.</description>
+      <description>Overview  Create a command line interface (CLI) for the calculator program. Use a number-based menu system, for example
+1. Tips 2. CtoF 3. FtoC 4. Interest 5. Distance 6. Change ...   Starter code  The while-loop and if-conditional will be covered in a later unit.  # Hint: use your code from project 1 def CLI(): while(1): # show menu x = input( &amp;#34;Select your calculator, or use Q to quit:&amp;#34;) # if the input value is &amp;#39;q&amp;#39; or &amp;#39;Q&amp;#39;, quit if( x.</description>
     </item>
     
     <item>
@@ -176,7 +177,8 @@ Parameters are a mechanism of giving information to the function/procedure</desc
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/cp1/notes/unit-06/02-command-line-interface/</guid>
-      <description>Intro  A CLI is a Command-line interface  this is a way to operate a program using only text commands contrast with a GUI graphical user interface  Zork uses a CLI Below is a typical interaction in Zork (from from Zork @ textadventures.co.uk)  &amp;gt;look West of House This is an open field west of a white house, with a boarded front door. There is a small mailbox here.</description>
+      <description>Intro  A CLI is a Command-line interface  this is a way to operate a program using only text commands contrast with a GUI graphical user interface  Zork uses a CLI Below is a typical interaction in Zork (from from Zork @ textadventures.co.uk)
+&amp;gt;look West of House This is an open field west of a white house, with a boarded front door. There is a small mailbox here.</description>
     </item>
     
     <item>
@@ -212,7 +214,7 @@ Parameters are a mechanism of giving information to the function/procedure</desc
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/cp1/notes/unit-09/02-html-dom/</guid>
-      <description>Reference  W3Schools HTML DOM Tutorial W3Schools HTML DOM Reference  The DOM  DOM stands for Document Object Model The DOM is used to access and modify HTML elements using JavaScript The DOM is a tree representation of an HTML document  DOM Methods  See previous motes for examples The document object is at the top of the hierarchy Getting elements  document.getElementById document.getElementsByTagName document.getElementsByClassName document.getElementsByName  Getting elements using CSS selectors  document.</description>
+      <description>Reference  W3Schools HTML DOM Tutorial W3Schools HTML DOM Reference  The DOM  DOM stands for Document Object Model The DOM is used to access and modify HTML elements using JavaScript The DOM is a tree representation of an HTML document  DOM Methods  See previous notes for examples The document object is at the top of the hierarchy Getting elements  document.getElementById document.getElementsByTagName document.getElementsByClassName document.getElementsByName  Getting elements using CSS selectors  document.</description>
     </item>
     
     <item>

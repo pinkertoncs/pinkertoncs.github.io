@@ -86,30 +86,22 @@ p1<span style="color:#666">.</span><span style="color:#b44">setName</span><span 
 </span><span style="color:#080;font-style:italic"></span>System<span style="color:#666">.</span><span style="color:#b44">out</span><span style="color:#666">.</span><span style="color:#b44">println</span><span style="color:#666">(</span>p1<span style="color:#666">.</span><span style="color:#b44">toString</span><span style="color:#666">());</span>
 
 <span style="color:#080;font-style:italic">//use the compareTo method, compare p1 and p2
-</span><span style="color:#080;font-style:italic"></span>System<span style="color:#666">.</span><span style="color:#b44">out</span><span style="color:#666">.</span><span style="color:#b44">println</span><span style="color:#666">(</span>p1<span style="color:#666">.</span><span style="color:#b44">compareTo</span><span style="color:#666">(</span>p2<span style="color:#666">));</span></code></pre></div></li>
-</ul>
-
+</span><span style="color:#080;font-style:italic"></span>System<span style="color:#666">.</span><span style="color:#b44">out</span><span style="color:#666">.</span><span style="color:#b44">println</span><span style="color:#666">(</span>p1<span style="color:#666">.</span><span style="color:#b44">compareTo</span><span style="color:#666">(</span>p2<span style="color:#666">));</span></code></pre></div>
 <h2 id="list">List</h2>
 
 <ul>
 <li>This list is specifically designed to hold Person objects</li>
-<li>Methods (Tier 1)
-
-<ul>
+<li>Methods (Tier 1)</li>
 <li><strong>length()</strong> - returns length of list</li>
 <li><strong>toString()</strong> - returns a string representation of this list</li>
 <li><strong>push(Person)</strong> - adds a person to the list</li>
 <li><strong>pop()</strong> - removes item from the end of list and return reference to popped item</li>
 <li><strong>find(Person)</strong> - returns index of param or -1 if not found</li>
 <li><strong>get(index)</strong> - return the Person object at index</li>
-</ul></li>
-<li>Methods (Tier 2)
-
-<ul>
+<li>Methods (Tier 2)</li>
 <li><strong>insert(index, Person)</strong> - insert Person at specified index</li>
 <li><strong>pop(index)</strong> - remove Person at index, return reference to popped item</li>
 <li><strong>sort()</strong> - sort the list using the Person <strong>compareTo</strong> method</li>
-</ul></li>
 </ul>
 
 <h2 id="main">Main</h2>
@@ -123,16 +115,11 @@ p1<span style="color:#666">.</span><span style="color:#b44">setName</span><span 
 <h2 id="tips">Tips</h2>
 
 <ul>
-<li><strong>length()</strong>
-
-<ul>
+<li><strong>length()</strong></li>
 <li>set a <em>count</em> variable to 0</li>
 <li>iterate over the list, incrementing <em>count</em></li>
 <li>return <em>count</em></li>
-</ul></li>
-<li><strong>toString()</strong>
-
-<ul>
+<li><strong>toString()</strong></li>
 <li>create an empty string</li>
 <li>iterate over the list
 
@@ -140,10 +127,7 @@ p1<span style="color:#666">.</span><span style="color:#b44">setName</span><span 
 <li>call the element&rsquo;s toString() method and append it to string</li>
 </ul></li>
 <li>return the string</li>
-</ul></li>
-<li><strong>push(Person)</strong>
-
-<ul>
+<li><strong>push(Person)</strong></li>
 <li>create a new node and set it&rsquo;s Person data to the parameter</li>
 <li>case 1 - adding first element to the list (root is <strong>null</strong>)
 
@@ -158,10 +142,7 @@ p1<span style="color:#666">.</span><span style="color:#b44">setName</span><span 
 <li>set the last node&rsquo;s <strong>next</strong> to the new node</li>
 <li>(Doubly Linked List) set the new Node&rsquo;s <strong>prev</strong> to last node</li>
 </ul></li>
-</ul></li>
-<li><strong>pop()</strong>
-
-<ul>
+<li><strong>pop()</strong></li>
 <li>case 1 - empty list
 
 <ul>
