@@ -74,7 +74,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/cp1/notes/unit-10/01-drawing-and-animation/</guid>
-      <description>References  Canvas  W3Schools Canvas Tutorial W3Schools Canvas Reference HTML5 Canvas Tutorials  Timing  JS Timing Tutorial   Canvas  See the tutorials for information on the &amp;lt;canvas&amp;gt; element and context object Notes:  Use the HTML width and height attributes to set the dimensions of a canvas. Do not use CSS, it will just stretch and/or compress the canvas and distort the true dimensions   HTML &amp;lt;h1&amp;gt; Canvas!</description>
+      <description>References  Canvas  W3Schools Canvas Tutorial W3Schools Canvas Reference HTML5 Canvas Tutorials  Timing  JS Timing Tutorial   Canvas  See the tutorials for information on the &amp;lt;canvas&amp;gt; element and context object Notes:  Use the HTML width and height attributes to set the dimensions of a canvas. Do not use CSS, it will just stretch and/or compress the canvas and distort the true dimensions   HTML &amp;lt;body onload=&amp;#34;initialize()&amp;#34;&amp;gt; &amp;lt;h1&amp;gt; Canvas!</description>
     </item>
     
     <item>
