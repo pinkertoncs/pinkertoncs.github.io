@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>/</loc>
+    <lastmod>2018-07-05T13:52:46-04:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/camp/</loc>
     <lastmod>2018-07-05T13:52:46-04:00</lastmod>
   </url>
@@ -67,11 +72,6 @@
   
   <url>
     <loc>/cp1/notes/unit-10/x1-jsgame/</loc>
-  </url>
-  
-  <url>
-    <loc>/</loc>
-    <lastmod>2018-07-05T13:52:46-04:00</lastmod>
   </url>
   
   <url>
