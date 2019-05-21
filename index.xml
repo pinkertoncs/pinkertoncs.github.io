@@ -73,15 +73,6 @@ We will learn about:
     </item>
     
     <item>
-      <title>Enrichment 01 - JS Game</title>
-      <link>/cp1/notes/unit-10/x1-jsgame/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/cp1/notes/unit-10/x1-jsgame/</guid>
-      <description>Directions  Create a simple pong-like game, where you can use a paddle at the bottom of the screen to bounce the ball look back on previous demo code for a good starting point  Hints  Start with sample code Add a paddle object Define the appropriate event listeners in the initialize function Detect collisions between the paddles and the walls, and between the paddle and the ball, and respond accordingly  Extensions (choose 1)  Make a 2-player pong game with scoring Turn you game into a breakout clone.</description>
-    </item>
-    
-    <item>
       <title>Lesson 01 - Conditions and Logic</title>
       <link>/cp1/notes/unit-04/01-conditions-and-logic/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -826,6 +817,16 @@ Project Overview  Research  Play around with Zork Online a bit. Do not get too s
       
       <guid>/cp2/notes/unit-01/p1-data/</guid>
       <description>Direction  Answer the following questions in a Google Doc and submit your completed work via Google Classroom.  Questions  What is UNIX? What are the components of the UNIX operating system? What other operating systems are build on UNIX? Compare and contrast CLI and GUI based operating systems. What are the advantages and disadvantages of each? What is the difference between an absolute and relative directory path? Give an example of each.</description>
+    </item>
+    
+    <item>
+      <title>Project 02 - JS Game</title>
+      <link>/cp1/notes/unit-10/x1-jsgame/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/cp1/notes/unit-10/x1-jsgame/</guid>
+      <description>Directions  Create a simple game using HTML/JS and canvas. Suggestions include  Pong Breakout Snake Asteroids   Example - Pong To create a simple pong-like game, where you can use a paddle at the bottom of the screen to bounce the ball look back on previous animations worksheet/code for a good starting point
+Hints  Start with sample code Add a paddle object Define the appropriate event listeners (mouse?</description>
     </item>
     
     <item>

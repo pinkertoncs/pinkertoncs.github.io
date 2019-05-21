@@ -51,15 +51,6 @@
     </item>
     
     <item>
-      <title>Enrichment 01 - JS Game</title>
-      <link>/cp1/notes/unit-10/x1-jsgame/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/cp1/notes/unit-10/x1-jsgame/</guid>
-      <description>Directions  Create a simple pong-like game, where you can use a paddle at the bottom of the screen to bounce the ball look back on previous demo code for a good starting point  Hints  Start with sample code Add a paddle object Define the appropriate event listeners in the initialize function Detect collisions between the paddles and the walls, and between the paddle and the ball, and respond accordingly  Extensions (choose 1)  Make a 2-player pong game with scoring Turn you game into a breakout clone.</description>
-    </item>
-    
-    <item>
       <title>Lesson 01 - Conditions and Logic</title>
       <link>/cp1/notes/unit-04/01-conditions-and-logic/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -513,6 +504,16 @@ Project Overview  Research  Play around with Zork Online a bit. Do not get too s
       
       <guid>/cp1/notes/unit-09/p1-word-games/</guid>
       <description>Objectives  Use the DOM to access the value of input fields Use the DOM to modify the innerHTML of a div Use string methods Use array methods  Madlib  To get started, add these elements to your page  text input button paragraph  Implement the following behavior  When you click the button, the text in the input is echoed in the paragraph  Create more inputs with labels and a single submit button When the button is clicked, call a function that generates a story using the information entered and displays it in the paragraph  Piglatin  Create a div with a text input, a button, and a paragraph When the button is clicked, the text in the input is translated to Pig Latin Rules of Pig Latin  Words beginning with vowels (a, e, i, o, u) should have way appended to them Words beginning with consonants should have the consonant moved to the end and have ay appended All letters should be lower case   Example &amp;quot;Hi how are you doing&amp;quot; -&amp;gt; &amp;quot;ihay, owhay, areway ouyay oingday&amp;quot;  Extensions (optional)  Make the translator work with punctuation Make the translator work with words that have multiple letters that make a single sound at the beginning.</description>
+    </item>
+    
+    <item>
+      <title>Project 02 - JS Game</title>
+      <link>/cp1/notes/unit-10/x1-jsgame/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/cp1/notes/unit-10/x1-jsgame/</guid>
+      <description>Directions  Create a simple game using HTML/JS and canvas. Suggestions include  Pong Breakout Snake Asteroids   Example - Pong To create a simple pong-like game, where you can use a paddle at the bottom of the screen to bounce the ball look back on previous animations worksheet/code for a good starting point
+Hints  Start with sample code Add a paddle object Define the appropriate event listeners (mouse?</description>
     </item>
     
     <item>
