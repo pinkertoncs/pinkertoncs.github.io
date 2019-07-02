@@ -6,22 +6,9 @@
     <description>Recent content in Home on PinkertonCS</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 05 Jul 2018 13:52:46 -0400</lastBuildDate>
     
 	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>Pinkerton CTE Summer Coding Camp</title>
-      <link>/camp/</link>
-      <pubDate>Thu, 05 Jul 2018 13:52:46 -0400</pubDate>
-      
-      <guid>/camp/</guid>
-      <description>Coding &amp;amp; Computer Science with the RaspberryPi This four day camp will introduce you to the exciting, challenging, and fun field of coding using the amazing $35 dollar RaspberryPi computer.
-We will learn about:
- The RaspberryPi device Visual programming with Scratch Python Programming creating music with code Minecraft programming with Python Programming simple circuits using Scratch and Python  Itinerary  Monday
- Getting Started with the RaspberryPi Getting Started with Scratch Beginner Scratch Intermediate Scratch Advanced Scratch Gravity Simulator Guess the Flag Chatbot  Tuesday</description>
-    </item>
     
     <item>
       <title>Capstone</title>
@@ -618,6 +605,17 @@ Examples type(123456) # returns &amp;lt;class &amp;#39;int&amp;#39;&amp;gt; ... 
       <description>Python has built-in functions that enable the programmer to convert or type cast data from one format to another.
 Type conversion function: - int(param) - attempt to convert param to an int - float(param) - attempt to convert param to float - str(param) - attempt to convert param to string
 Important The input function returns all data as strings, so for example if you ask the user to enter a number for age, it will need to be type cast into a int before the programmer can use it as a number</description>
+    </item>
+    
+    <item>
+      <title>Pinkerton CTE Summer Coding Camp</title>
+      <link>/camp/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/camp/</guid>
+      <description>Coding &amp;amp; Computer Science with the RaspberryPi This four day camp will introduce you to the exciting, challenging, and fun field of coding using the amazing $35 dollar RaspberryPi computer.
+We will learn:
+ About the Raspberrypi Single Board Computer Programming using Edublocks and Python Creating music with code using SonicPi Creating Minecraft mods Building and Coding simple hardware circuits Designing and Coding a simple game  Itinerary  Monday</description>
     </item>
     
     <item>
