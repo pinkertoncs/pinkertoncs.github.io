@@ -1,0 +1,32 @@
+nav {
+    text-align: center;
+    font-size:10pt;
+}
+
+body {
+    font-family: sans-serif;
+    background-color: #fffffa;
+    color: #111111;
+    line-height: 1.5;
+    max-width: 40em;
+    padding: 2rem;
+    margin: auto;
+}
+
+h1, footer {
+    text-align: center;
+}
+
+table {
+    table-layout:fixed;
+    width:40%;
+}
+
+table, th, td {
+    border: 1px solid #111111;
+}
+
+td, th {
+    padding: 5px 5px 5px 5px;
+    text-align: center;
+}
