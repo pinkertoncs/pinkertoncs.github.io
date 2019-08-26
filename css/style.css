@@ -1,10 +1,11 @@
-nav {
-    text-align: center;
-    font-size:10pt;
+@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Sans&display=swap');
+
+nav li {
+    list-style-type:none;
 }
 
 body {
-    font-family: sans-serif;
+    font-family: 'IBM Plex Sans', sans-serif;
     background-color: #fffffa;
     color: #111111;
     line-height: 1.5;
@@ -13,13 +14,8 @@ body {
     margin: auto;
 }
 
-h1, footer {
+footer {
     text-align: center;
-}
-
-table {
-    table-layout:fixed;
-    width:40%;
 }
 
 table, th, td {
